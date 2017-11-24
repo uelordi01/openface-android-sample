@@ -34,7 +34,10 @@
 // FaceTrackingVid.cpp : Defines the entry point for the console application for tracking faces in videos.
 
 // Libraries for landmark detection (includes CLNF and CLM modules)
-#include "LandmarkCoreIncludes.h"
+#include "LandmarkDetectorModel.h"
+#include "LandmarkDetectorFunc.h"
+#include "LandmarkDetectorParameters.h"
+#include "LandmarkDetectorUtils.h"
 
 #include <sys/stat.h>
 
@@ -161,7 +164,7 @@ void visualise_tracking(cv::Mat& captured_image,
                 CV_FONT_HERSHEY_SIMPLEX, 0.5, CV_RGB(0, 255, 255));
         ss.str("");
 
-//		// Draw it in reddish if uncertain, blueish if certain
+//        // Draw it in reddish if uncertain, blueish if certain
 //        LandmarkDetector::DrawBox(captured_image, pose_estimate_to_draw,
 //                                  cv::Scalar((1 - vis_certainty)*255.0, 0,
 //                                             vis_certainty * 255),
