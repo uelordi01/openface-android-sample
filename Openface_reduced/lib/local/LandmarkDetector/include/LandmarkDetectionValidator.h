@@ -59,6 +59,28 @@
 #ifndef __LANDMARK_DETECTION_VALIDATOR_h_
 #define __LANDMARK_DETECTION_VALIDATOR_h_
 
+// Define compilation platform.
+#if  defined(__ANDROID__)
+# ifndef ANDROID
+#define ANDROID
+# endif
+#elif defined(_WIN32)
+#define WINDOWS
+#elif defined(__linux__)
+#define LINUX
+#elif defined(__APPLE__)
+#include "TargetConditionals.h"
+#if TARGET_IPHONE_SIMULATOR
+#   define IOS_SIMULATOR
+#elif TARGET_OS_IPHONE
+#   define IOS
+#elif TARGET_OS_MAC
+#   define MAC_OS_X
+#else
+#   error "Unknown Apple platform"
+#endif
+#endif
+
 // OpenCV includes
 #include <opencv2/core/core.hpp>
 

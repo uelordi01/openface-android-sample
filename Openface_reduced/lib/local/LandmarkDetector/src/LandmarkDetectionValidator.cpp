@@ -65,7 +65,9 @@
 #include <opencv2/imgproc.hpp>
 
 // TBB includes
+#if !defined(IOS)
 #include <tbb/tbb.h>
+#endif
 
 // System includes
 #include <fstream>
@@ -485,8 +487,11 @@ double DetectionValidator::Check(const cv::Vec3d& orientation, const cv::Mat_<uc
 	else if (validator_type == 3)
 	{
 		// On some machines the non-TBB version may be faster
-		//dec = CheckCNN(warped, id);
+#if defined(IOS)
+		dec = CheckCNN(warped, id);
+#else
 		dec = CheckCNN_tbb(warped, id);
+#endif
 	}
 	return dec;
 }
@@ -797,7 +802,9 @@ double DetectionValidator::CheckCNN_old(const cv::Mat_<double>& warped_img, int 
 // Convolutional Neural Network
 double DetectionValidator::CheckCNN_tbb(const cv::Mat_<double>& warped_img, int view_id)
 {
-
+    double unquantized = 0.0;
+    
+#if !defined(IOS)
 	cv::Mat_<double> feature_vec;
 	NormaliseWarpedToVector(warped_img, feature_vec, view_id);
 
@@ -1037,9 +1044,10 @@ double DetectionValidator::CheckCNN_tbb(const cv::Mat_<double>& warped_img, int 
 	double bins = (double)outputs[0].cols;
 	// Unquantizing the softmax layer to continuous value
 	double step_size = (max - min) / bins; // This should be saved somewhere
-	double unquantized = min + step_size / 2.0 + max_idx * step_size;
+	unquantized = min + step_size / 2.0 + max_idx * step_size;
 
-	return unquantized;
+#endif  // ios
+    return unquantized;
 }
 
 // Convolutional Neural Network

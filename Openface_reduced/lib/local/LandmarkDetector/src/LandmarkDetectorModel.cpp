@@ -36,8 +36,32 @@
 
 #include <LandmarkDetectorModel.h>
 
+// Define compilation platform.
+#if  defined(__ANDROID__)
+# ifndef ANDROID
+#define ANDROID
+# endif
+#elif defined(_WIN32)
+#define WINDOWS
+#elif defined(__linux__)
+#define LINUX
+#elif defined(__APPLE__)
+#include "TargetConditionals.h"
+#if TARGET_IPHONE_SIMULATOR
+#   define IOS_SIMULATOR
+#elif TARGET_OS_IPHONE
+#   define IOS
+#elif TARGET_OS_MAC
+#   define MAC_OS_X
+#else
+#   error "Unknown Apple platform"
+#endif
+#endif
+
 // TBB includes
+#if !defined(IOS)
 #include <tbb/tbb.h>
+#endif
 
 // Local includes
 #include <LandmarkDetectorUtils.h>
@@ -566,7 +590,11 @@ bool CLNF::DetectLandmarks(const cv::Mat_<uchar> &image, FaceModelParameters& pa
 		bool parts_used = false;		
 
 		// Do the hierarchical models in parallel
+#if defined(IOS)
+        for(int part_model = 0; part_model < (int)hierarchical_models.size(); ++part_model)
+#else
 		tbb::parallel_for(0, (int)hierarchical_models.size(), [&](int part_model){
+#endif
 		{
 			// Only do the synthetic eye models if we're doing gaze
 			if (!((hierarchical_model_names[part_model].compare("right_eye_28") == 0 ||
@@ -607,7 +635,9 @@ bool CLNF::DetectLandmarks(const cv::Mat_<uchar> &image, FaceModelParameters& pa
 				}
 			}
 		}
+#if !defined(IOS)
 		});
+#endif
 
 		// Recompute main model based on the fit part models
 		if(parts_used)

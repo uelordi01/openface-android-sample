@@ -36,12 +36,37 @@
 
 #include "Patch_experts.h"
 
+
+// Define compilation platform.
+#if  defined(__ANDROID__)
+# ifndef ANDROID
+#define ANDROID
+# endif
+#elif defined(_WIN32)
+#define WINDOWS
+#elif defined(__linux__)
+#define LINUX
+#elif defined(__APPLE__)
+#include "TargetConditionals.h"
+#if TARGET_IPHONE_SIMULATOR
+#   define IOS_SIMULATOR
+#elif TARGET_OS_IPHONE
+#   define IOS
+#elif TARGET_OS_MAC
+#   define MAC_OS_X
+#else
+#   error "Unknown Apple platform"
+#endif
+#endif
+
 // OpenCV includes
 #include <opencv2/core/core_c.h>
 #include <opencv2/imgproc/imgproc_c.h>
 
 // TBB includes
+#if !defined(IOS)
 #include <tbb/tbb.h>
+#endif
 
 // Math includes
 #define _USE_MATH_DEFINES
@@ -163,8 +188,12 @@ void Patch_experts::Response(vector<cv::Mat_<float> >& patch_expert_responses, c
 #ifdef _OPENMP
 #pragma omp parallel for
 #endif
+    
+#if defined(IOS)
+    for(int i = 0; i < n; i++)
+#else
 	tbb::parallel_for(0, (int)n, [&](int i){
-	//for(int i = 0; i < n; i++)
+#endif
 	{
 			
 		if(visibilities[scale][view_id].rows == n)
@@ -216,7 +245,9 @@ void Patch_experts::Response(vector<cv::Mat_<float> >& patch_expert_responses, c
 			}
 		}
 	}
+#if !defined(IOS)
 	});
+#endif
 
 }
 
