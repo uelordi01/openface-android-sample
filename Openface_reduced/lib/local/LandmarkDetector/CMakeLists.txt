@@ -22,7 +22,6 @@ SET(SOURCE
 
 SET(HEADERS
     include/CCNF_patch_expert.h	
-    include/LandmarkCoreIncludes.h
 	include/LandmarkDetectionValidator.h
     include/LandmarkDetectorFunc.h
 	include/LandmarkDetectorModel.h
