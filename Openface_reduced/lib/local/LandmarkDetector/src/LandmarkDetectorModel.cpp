@@ -59,7 +59,7 @@
 #endif
 
 // TBB includes
-#if !defined(IOS)
+#if !defined(IOS) && !defined(ANDROID)
 #include <tbb/tbb.h>
 #endif
 
@@ -590,7 +590,7 @@ bool CLNF::DetectLandmarks(const cv::Mat_<uchar> &image, FaceModelParameters& pa
 		bool parts_used = false;		
 
 		// Do the hierarchical models in parallel
-#if defined(IOS)
+#if defined(IOS) || defined(ANDROID)
         for(int part_model = 0; part_model < (int)hierarchical_models.size(); ++part_model)
 #else
 		tbb::parallel_for(0, (int)hierarchical_models.size(), [&](int part_model){
@@ -635,7 +635,7 @@ bool CLNF::DetectLandmarks(const cv::Mat_<uchar> &image, FaceModelParameters& pa
 				}
 			}
 		}
-#if !defined(IOS)
+#if !defined(IOS) && !defined(ANDROID)
 		});
 #endif
 

@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.WindowManager;
-import android.widget.TextView;
 
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase;
@@ -43,12 +42,107 @@ public class MainActivity extends AppCompatActivity implements
 
         // Define your caffe models:
         final String CAFFE_MODEL[] = {
-                "",
-                ""
+                "svr_patches_0.5_wild.txt",
+                "main_clnf_inner.txt",
+                "clm_wild.txt",
+                "ccnf_patches_1_ibug_glasses.txt",
+                "main_clnf_general_back.txt",
+                "main_clm_general.txt",
+                "validator_cnn.txt",
+                "tris_68_full.txt",
+                "ccnf_patches_1_wild.txt",
+                "clnf_right_synth.txt",
+                "ccnf_patches_100_inner.txt",
+                "left_ccnf_patches_1.50_synth_lid_.txt",
+                "svr_patches_0.25_general.txt",
+                "main_clnf_ibug_glasses_movile.txt",
+                "main_clnf_synth_left.txt",
+                "svr_patches_0.35_general.txt",
+                "ccnf_patches_1.50_synth_lid_.txt",
+                "svr_patches_0.35_wild.txt",
+                "in_the_wild_aligned_pdm_68.txt",
+                "ccnf_patches_05_wild.txt",
+                "ccnf_patches_0.25_ibug_glasses.txt",
+                "main_clnf_wild.txt",
+                "clnf_inner.txt",
+                "left_ccnf_patches_1.00_synth_lid_.txt",
+                "clnf_left_synth.txt",
+                "ccnf_patches_0.5_general.txt",
+                "haar_align.txtt",
+                "svr_patches_0.25_wild.txt",
+                "ccnf_patches_0.25_general.txt",
+                "clnf_wild.txt",
+                "clnf_general.txt",
+                "pdm_68_aligned_ibug_glasses.txt",
+                "main_clm_wild.txt",
+                "ccnf_patches_0.35_ibug_glasses.txt",
+                "ccnf_patches_0.25_wild.txt",
+                "svr_patches_0.5_general.txt",
+                "pdm_51_inner.txt",
+                "clnf_ibug_glasses.txt",
+                "ccnf_patches_1.00_synth_lid_.txt",
+                "ccnf_patches_035_general.txt",
+                "tris_68.txt",
+                "validator_general_68.txt",
+                "pdm_28_eye_3d_closed.txt",
+                "clm_general.txt",
+                "ccnf_patches_0.35_wild.txt",
+                "ccnf_patches_0.5_ibug_glasses.txt",
+                "main_clnf_synth_right.txt",
+                "pdm_28_l_eye_3d_closed.txt"
         };
 
         //Define the external resources that are going to write in the internal memory.
-        Map<Integer, String> configuration_resources = new HashMap<Integer,String>();
+        Map<Integer, String> resources = new HashMap<Integer,String>();
+        resources.put(R.raw.svr_patches_05_wild, "svr_patches_0.5_wild.txt");
+        resources.put(R.raw.main_clnf_inner, "main_clnf_inner.txt");
+        resources.put(R.raw.clm_wild, "clm_wild.txt");
+        resources.put(R.raw.ccnf_patches_1_ibug_glasses, "ccnf_patches_1_ibug_glasses.txt");
+        resources.put(R.raw.main_clnf_general_back, "main_clnf_general_back.txt");
+        resources.put(R.raw.main_clm_general, "main_clm_general.txt");
+        resources.put(R.raw.validator_cnn, "validator_cnn.txt");
+        resources.put(R.raw.tris_68_full, "tris_68_full.txt");
+        resources.put(R.raw.ccnf_patches_1_wild, "ccnf_patches_1_wild.txt");
+        resources.put(R.raw.clnf_right_synth, "clnf_right_synth.txt");
+        resources.put(R.raw.ccnf_patches_100_inner, "ccnf_patches_100_inner.txt");
+        resources.put(R.raw.left_ccnf_patches_150_synth_lid_, "left_ccnf_patches_1.50_synth_lid_.txt");
+        resources.put(R.raw.svr_patches_025_general, "svr_patches_0.25_general.txt");
+        resources.put(R.raw.main_clnf_ibug_glasses_movile, "main_clnf_ibug_glasses_movile.txt");
+        resources.put(R.raw.main_clnf_synth_left, "main_clnf_synth_left.txt");
+        resources.put(R.raw.svr_patches_035_general, "svr_patches_0.35_general.txt");
+        resources.put(R.raw.ccnf_patches_150_synth_lid_, "ccnf_patches_1.50_synth_lid_.txt");
+        resources.put(R.raw.svr_patches_035_wild, "svr_patches_0.35_wild.txt");
+        resources.put(R.raw.in_the_wild_aligned_pdm_68, "in_the_wild_aligned_pdm_68.txt");
+        resources.put(R.raw.ccnf_patches_05_wild, "ccnf_patches_05_wild.txt");
+        resources.put(R.raw.ccnf_patches_025_ibug_glasses, "ccnf_patches_0.25_ibug_glasses.txt");
+        resources.put(R.raw.main_clnf_wild, "main_clnf_wild.txt");
+        resources.put(R.raw.clnf_inner, "clnf_inner.txt");
+        resources.put(R.raw.left_ccnf_patches_100_synth_lid_, "left_ccnf_patches_1.00_synth_lid_.txt");
+        resources.put(R.raw.clnf_left_synth, "clnf_left_synth.txt");
+        resources.put(R.raw.ccnf_patches_05_general, "ccnf_patches_0.5_general.txt");
+        resources.put(R.raw.haar_align, "haar_alignn.txt");
+        resources.put(R.raw.svr_patches_025_wild, "svr_patches_0.25_wild.txt");
+        resources.put(R.raw.ccnf_patches_025_general, "ccnf_patches_0.25_general.txt");
+        resources.put(R.raw.clnf_wild, "clnf_wild.txt");
+        resources.put(R.raw.clnf_general, "clnf_general.txt");
+        resources.put(R.raw.pdm_68_aligned_ibug_glasses, "pdm_68_aligned_ibug_glasses.txt");
+        resources.put(R.raw.main_clm_wild, "main_clm_wild.txt");
+        resources.put(R.raw.ccnf_patches_035_ibug_glasses, "ccnf_patches_0.35_ibug_glasses.txt");
+        resources.put(R.raw.ccnf_patches_025_wild, "ccnf_patches_0.25_wild.txt");
+        resources.put(R.raw.svr_patches_05_general, "svr_patches_0.5_general.txt");
+        resources.put(R.raw.pdm_51_inner, "pdm_51_inner.txt");
+        resources.put(R.raw.clnf_ibug_glasses, "clnf_ibug_glasses.txt");
+        resources.put(R.raw.ccnf_patches_100_synth_lid_, "ccnf_patches_1.00_synth_lid_.txt");
+        resources.put(R.raw.ccnf_patches_035_general, "ccnf_patches_035_general.txt");
+        resources.put(R.raw.tris_68, "tris_68.txt");
+        resources.put(R.raw.validator_general_68, "validator_general_68.txt");
+        resources.put(R.raw.pdm_28_eye_3d_closed, "pdm_28_eye_3d_closed.txt");
+        resources.put(R.raw.clm_general, "clm_general.txt");
+        resources.put(R.raw.ccnf_patches_035_wild, "ccnf_patches_0.35_wild.txt");
+        resources.put(R.raw.ccnf_patches_05_ibug_glasses, "ccnf_patches_0.5_ibug_glasses.txt");
+        resources.put(R.raw.main_clnf_synth_right, "main_clnf_synth_right.txt");
+        resources.put(R.raw.pdm_28_l_eye_3d_closed, "pdm_28_l_eye_3d_closed.txt");
+
 //        configuration_resources.put(R.raw.res10_300x300_ssd_iter_140000_net, CAFFE_MODEL[0]);
 //        configuration_resources.put(R.raw.res10_300x300_ssd_iter_140000_weights, CAFFE_MODEL[1]);
 
@@ -56,7 +150,7 @@ public class MainActivity extends AppCompatActivity implements
 
         LoadConfigurationsTask loadTask = new LoadConfigurationsTask();
         loadTask.setCallback(getApplicationContext(), this);
-        loadTask.setConfigurationResources(configuration_resources);
+        loadTask.setConfigurationResources(resources);
         loadTask.setDNNModelsToWrite(CAFFE_MODEL[0], CAFFE_MODEL[1]);
         loadTask.setInputSize(300, 300);
         loadTask.setNeuralType(LoadConfigurationsTask.NeuralType.NT_CAFFE);

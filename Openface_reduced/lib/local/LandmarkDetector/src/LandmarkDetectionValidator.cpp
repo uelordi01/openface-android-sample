@@ -2,7 +2,7 @@
 // Copyright (C) 2016, Carnegie Mellon University and University of Cambridge,
 // all rights reserved.
 //
-// THIS SOFTWARE IS PROVIDED “AS IS” FOR ACADEMIC USE ONLY AND ANY EXPRESS
+// THIS SOFTWARE IS PROVIDED ï¿½AS ISï¿½ FOR ACADEMIC USE ONLY AND ANY EXPRESS
 // OR IMPLIED WARRANTIES WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
 // THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
 // PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS
@@ -15,13 +15,13 @@
 // POSSIBILITY OF SUCH DAMAGE.
 //
 // Notwithstanding the license granted herein, Licensee acknowledges that certain components
-// of the Software may be covered by so-called “open source” software licenses (“Open Source
-// Components”), which means any software licenses approved as open source licenses by the
+// of the Software may be covered by so-called ï¿½open sourceï¿½ software licenses (ï¿½Open Source
+// Componentsï¿½), which means any software licenses approved as open source licenses by the
 // Open Source Initiative or any substantially similar licenses, including without limitation any
 // license that, as a condition of distribution of the software licensed under such license,
 // requires that the distributor make the software available in source code format. Licensor shall
 // provide a list of Open Source Components for a particular version of the Software upon
-// Licensee’s request. Licensee will comply with the applicable terms of such licenses and to
+// Licenseeï¿½s request. Licensee will comply with the applicable terms of such licenses and to
 // the extent required by the licenses covering Open Source Components, the terms of such
 // licenses will apply in lieu of the terms of this Agreement. To the extent the terms of the
 // licenses applicable to Open Source Components prohibit any of the restrictions in this
@@ -38,20 +38,20 @@
 //       reports and manuals, must cite at least one of the following works:
 //
 //       OpenFace: an open source facial behavior analysis toolkit
-//       Tadas Baltrušaitis, Peter Robinson, and Louis-Philippe Morency
+//       Tadas Baltruï¿½aitis, Peter Robinson, and Louis-Philippe Morency
 //       in IEEE Winter Conference on Applications of Computer Vision, 2016  
 //
 //       Rendering of Eyes for Eye-Shape Registration and Gaze Estimation
-//       Erroll Wood, Tadas Baltrušaitis, Xucong Zhang, Yusuke Sugano, Peter Robinson, and Andreas Bulling 
+//       Erroll Wood, Tadas Baltruï¿½aitis, Xucong Zhang, Yusuke Sugano, Peter Robinson, and Andreas Bulling 
 //       in IEEE International. Conference on Computer Vision (ICCV),  2015 
 //
 //       Cross-dataset learning and person-speci?c normalisation for automatic Action Unit detection
-//       Tadas Baltrušaitis, Marwa Mahmoud, and Peter Robinson 
+//       Tadas Baltruï¿½aitis, Marwa Mahmoud, and Peter Robinson 
 //       in Facial Expression Recognition and Analysis Challenge, 
 //       IEEE International Conference on Automatic Face and Gesture Recognition, 2015 
 //
 //       Constrained Local Neural Fields for robust facial landmark detection in the wild.
-//       Tadas Baltrušaitis, Peter Robinson, and Louis-Philippe Morency. 
+//       Tadas Baltruï¿½aitis, Peter Robinson, and Louis-Philippe Morency. 
 //       in IEEE Int. Conference on Computer Vision Workshops, 300 Faces in-the-Wild Challenge, 2013.    
 //
 ///////////////////////////////////////////////////////////////////////////////
@@ -65,7 +65,7 @@
 #include <opencv2/imgproc.hpp>
 
 // TBB includes
-#if !defined(IOS)
+#if !defined(IOS) && !defined(ANDROID)
 #include <tbb/tbb.h>
 #endif
 
@@ -487,7 +487,7 @@ double DetectionValidator::Check(const cv::Vec3d& orientation, const cv::Mat_<uc
 	else if (validator_type == 3)
 	{
 		// On some machines the non-TBB version may be faster
-#if defined(IOS)
+#if defined(IOS) || defined(ANDROID)
 		dec = CheckCNN(warped, id);
 #else
 		dec = CheckCNN_tbb(warped, id);
@@ -803,8 +803,8 @@ double DetectionValidator::CheckCNN_old(const cv::Mat_<double>& warped_img, int 
 double DetectionValidator::CheckCNN_tbb(const cv::Mat_<double>& warped_img, int view_id)
 {
     double unquantized = 0.0;
-    
-#if !defined(IOS)
+
+#if !defined(IOS) && !defined(ANDROID)
 	cv::Mat_<double> feature_vec;
 	NormaliseWarpedToVector(warped_img, feature_vec, view_id);
 

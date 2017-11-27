@@ -91,10 +91,7 @@ public class LoadConfigurationsTask extends android.os.AsyncTask<Void,Void,Boole
 //                writeSelectedFilesOnStorage(m_resources);
                 String[] libraryList_withPrefix = {
                         "opencv_java3",
-                        "native-lib",
-                        "kt",
-                        "kt_dnn",
-                        "kt_tracker"
+                        "native-lib"
                 };
                 JniManager.loadLibraries(libraryList_withPrefix);
                 JniManager.init(m_filenetDefinition,

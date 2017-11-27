@@ -14,20 +14,20 @@
 //       reports and manuals, must cite at least one of the following works:
 //
 //       OpenFace: an open source facial behavior analysis toolkit
-//       Tadas Baltrušaitis, Peter Robinson, and Louis-Philippe Morency
+//       Tadas Baltruï¿½aitis, Peter Robinson, and Louis-Philippe Morency
 //       in IEEE Winter Conference on Applications of Computer Vision, 2016  
 //
 //       Rendering of Eyes for Eye-Shape Registration and Gaze Estimation
-//       Erroll Wood, Tadas Baltrušaitis, Xucong Zhang, Yusuke Sugano, Peter Robinson, and Andreas Bulling 
+//       Erroll Wood, Tadas Baltruï¿½aitis, Xucong Zhang, Yusuke Sugano, Peter Robinson, and Andreas Bulling 
 //       in IEEE International. Conference on Computer Vision (ICCV),  2015 
 //
 //       Cross-dataset learning and person-speci?c normalisation for automatic Action Unit detection
-//       Tadas Baltrušaitis, Marwa Mahmoud, and Peter Robinson 
+//       Tadas Baltruï¿½aitis, Marwa Mahmoud, and Peter Robinson 
 //       in Facial Expression Recognition and Analysis Challenge, 
 //       IEEE International Conference on Automatic Face and Gesture Recognition, 2015 
 //
 //       Constrained Local Neural Fields for robust facial landmark detection in the wild.
-//       Tadas Baltrušaitis, Peter Robinson, and Louis-Philippe Morency. 
+//       Tadas Baltruï¿½aitis, Peter Robinson, and Louis-Philippe Morency. 
 //       in IEEE Int. Conference on Computer Vision Workshops, 300 Faces in-the-Wild Challenge, 2013.    
 //
 ///////////////////////////////////////////////////////////////////////////////
@@ -64,7 +64,7 @@
 #include <opencv2/imgproc/imgproc_c.h>
 
 // TBB includes
-#if !defined(IOS)
+#if !defined(IOS) && !defined(ANDROID)
 #include <tbb/tbb.h>
 #endif
 
@@ -189,7 +189,7 @@ void Patch_experts::Response(vector<cv::Mat_<float> >& patch_expert_responses, c
 #pragma omp parallel for
 #endif
     
-#if defined(IOS)
+#if defined(IOS) || defined(ANDROID)
     for(int i = 0; i < n; i++)
 #else
 	tbb::parallel_for(0, (int)n, [&](int i){
@@ -245,7 +245,7 @@ void Patch_experts::Response(vector<cv::Mat_<float> >& patch_expert_responses, c
 			}
 		}
 	}
-#if !defined(IOS)
+#if !defined(IOS) && !defined(ANDROID)
 	});
 #endif
 
