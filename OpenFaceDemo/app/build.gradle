@@ -12,7 +12,17 @@ android {
         externalNativeBuild {
             cmake {
                 cppFlags "-std=c++14"
-                arguments "-DOpenCV_DIR=" + getOpenCVDir().toString() + "/sdk/native/jni"
+                arguments "-DOpenCV_DIR=" + getOpenCVDir().toString() + "/sdk/native/jni",
+                "-Ddlib_DIR=" +getDlibDir().toString()+"/dlib",
+                "-DANDROID_NATIVE_API_LEVEL=23",
+                "-DANDROID_CPP_FEATURES=rtti exceptions",
+                "-DANDROID_STL=gnustl_static",
+                "-DDLIB_ENABLE_ASSERTS=OFF",
+                "-DDLIB_NO_GUI_SUPPORT=ON",
+                "-DDLIB_JPEG_SUPPORT=OFF",
+                "-DDLIB_PNG_SUPPORT=OFF",
+                "-DDLIB_LINK_WITH_SQLITE3=OFF"
+                abiFilters  'armeabi-v7a' , 'arm64-v8a'
             }
         }
     }
@@ -32,6 +42,16 @@ def getOpenCVDir() {
     Properties properties = new Properties()
     properties.load(new File(rootDir.absolutePath + "/local.properties").newDataInputStream())
     def externalModuleDir = properties.getProperty('opencv.dir', null)
+    if (externalModuleDir == null) {
+        throw new GradleException(
+                "OpenCV location not found. Define location with opencv.dir in the local.properties file!")
+    }
+    return externalModuleDir
+}
+def getDlibDir() {
+    Properties properties = new Properties()
+    properties.load(new File(rootDir.absolutePath + "/local.properties").newDataInputStream())
+    def externalModuleDir = properties.getProperty('dlib.dir', null)
     if (externalModuleDir == null) {
         throw new GradleException(
                 "OpenCV location not found. Define location with opencv.dir in the local.properties file!")
