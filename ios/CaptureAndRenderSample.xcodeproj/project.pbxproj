@@ -268,6 +268,7 @@
 		CE9293E11FC83EAA000DF5C7 /* pdm_68_aligned_ibug+glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "pdm_68_aligned_ibug+glasses.txt"; sourceTree = "<group>"; };
 		CE9293E21FC83EAA000DF5C7 /* tris_68.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = tris_68.txt; sourceTree = "<group>"; };
 		CE9293E31FC83EAA000DF5C7 /* tris_68_full.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = tris_68_full.txt; sourceTree = "<group>"; };
+		CE92942C1FCC2C7E000DF5C7 /* universalTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = universalTimer.h; path = NativeCode/universalTimer.h; sourceTree = "<group>"; };
 		EB38FEF2182BAE04004A705C /* CaptureAndRenderSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaptureAndRenderSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB38FEF5182BAE04004A705C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB38FEF7182BAE04004A705C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -329,6 +330,7 @@
 		530098CF1A1630A500664482 /* CPP_bridge */ = {
 			isa = PBXGroup;
 			children = (
+				CE92942C1FCC2C7E000DF5C7 /* universalTimer.h */,
 				539D7BCA1D2F7CF600001DE8 /* NativeCode.cpp */,
 				539D7BCB1D2F7CF600001DE8 /* NativeCode.h */,
 				89F485C9182D195300E8FEC0 /* OONativeSingleton.h */,

@@ -18,6 +18,8 @@
 #include "LandmarkDetectorParameters.h"
 #include "LandmarkDetectorUtils.h"
 
+#include "universalTimer.h"
+
 class Native
 {
 private:
@@ -25,6 +27,11 @@ private:
     
     LandmarkDetector::FaceModelParameters m_det_parameters;
     LandmarkDetector::CLNF m_clnf_model;
+    
+    UniversalTimer m_timer;
+    float m_elapsedTimeSum;
+    float m_meanElapsedTime;
+    int m_elapsedTimeCont;
    
 public:
     
