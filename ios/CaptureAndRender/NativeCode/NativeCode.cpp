@@ -53,7 +53,7 @@ std::string Native::time_stamp(string format)
     
 }
 
-void Native::init(std::string& parametersFile, std::string& inputVideoName)
+void Native::init(const std::string& parametersFile, const std::string& inputVideoName)
 {
     // Load openface elements
     // The modules that are being used for tracking

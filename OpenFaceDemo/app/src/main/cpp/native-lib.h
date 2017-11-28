@@ -4,8 +4,7 @@
 extern "C"
 {
 JNIEXPORT void JNICALL
-    Java_org_utils_JniManager_init(JNIEnv *env, jclass type, jstring deepNetFilename_,
-                                          jstring weightsFilename_,
+    Java_org_utils_JniManager_init(JNIEnv *env, jclass type, jstring resourceDir,
                                           jint inputWidth,
                                           jint inputHeight,
                                           jint neuralType);

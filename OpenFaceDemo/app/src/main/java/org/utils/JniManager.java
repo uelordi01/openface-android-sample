@@ -27,11 +27,9 @@ public class JniManager {
     }
 
     /**
-     * @param deepNetFilename: the neural definition (.prototxt, .pb)
-     * @param weightsFilename: the weights file that is trained
+     * @param resourceDir: path to the resource directory
      */
-    public static native void init(String deepNetFilename,
-                                   String weightsFilename,
+    public static native void init(String resourceDir,
                                    int inputWidth,
                                    int inputHeight,
                                    int neuralNetType);

@@ -38,7 +38,8 @@ public:
     Native( std::string& resourcesPath );
     ~Native();
     
-    void init(std::string& parametersFile, std::string& inputVideoName);
+    void init(const std::string& parametersFile,
+              const std::string& inputVideoName);
     
     // Frame update functions
     void processFrame(cv::Mat& frame);

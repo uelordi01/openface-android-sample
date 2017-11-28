@@ -48,78 +48,44 @@
 		CE9293751FC82EEC000DF5C7 /* PDM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE9292F81FC81F0B000DF5C7 /* PDM.cpp */; };
 		CE9293761FC82EEE000DF5C7 /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE9292F91FC81F0B000DF5C7 /* stdafx.cpp */; };
 		CE9293771FC82EF1000DF5C7 /* SVR_patch_expert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE9292FA1FC81F0B000DF5C7 /* SVR_patch_expert.cpp */; };
-		CE9293E41FC83EB0000DF5C7 /* clm_general.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293871FC83EAA000DF5C7 /* clm_general.txt */; };
-		CE9293E51FC83EB0000DF5C7 /* clm_wild.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293881FC83EAA000DF5C7 /* clm_wild.txt */; };
-		CE9293E61FC83EB0000DF5C7 /* clnf_general.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293891FC83EAA000DF5C7 /* clnf_general.txt */; };
-		CE9293E71FC83EB0000DF5C7 /* clnf_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE92938A1FC83EAA000DF5C7 /* clnf_ibug_glasses.txt */; };
-		CE9293E81FC83EB0000DF5C7 /* clnf_wild.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE92938B1FC83EAA000DF5C7 /* clnf_wild.txt */; };
-		CE9293E91FC83EC3000DF5C7 /* haarAlign.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293B21FC83EAA000DF5C7 /* haarAlign.txt */; };
-		CE9293EA1FC83EC3000DF5C7 /* main_clm_general.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293B31FC83EAA000DF5C7 /* main_clm_general.txt */; };
-		CE9293EB1FC83EC3000DF5C7 /* main_clm_wild.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293B41FC83EAA000DF5C7 /* main_clm_wild.txt */; };
-		CE9293EC1FC83EC3000DF5C7 /* main_clnf_general_back.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293B51FC83EAA000DF5C7 /* main_clnf_general_back.txt */; };
-		CE9293ED1FC83EC3000DF5C7 /* main_clnf_ibug_glasses_movile.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293B61FC83EAA000DF5C7 /* main_clnf_ibug_glasses_movile.txt */; };
-		CE9293EE1FC83EC3000DF5C7 /* main_clnf_wild.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293B71FC83EAA000DF5C7 /* main_clnf_wild.txt */; };
-		CE9293EF1FC83EC8000DF5C7 /* clnf_left_synth.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293B91FC83EAA000DF5C7 /* clnf_left_synth.txt */; };
-		CE9293F01FC83EC8000DF5C7 /* clnf_right_synth.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293BA1FC83EAA000DF5C7 /* clnf_right_synth.txt */; };
-		CE9293F11FC83EC8000DF5C7 /* main_clnf_synth_left.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293BB1FC83EAA000DF5C7 /* main_clnf_synth_left.txt */; };
-		CE9293F21FC83EC8000DF5C7 /* main_clnf_synth_right.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293BC1FC83EAA000DF5C7 /* main_clnf_synth_right.txt */; };
-		CE9293F31FC83ECE000DF5C7 /* ccnf_patches_1.00_synth_lid_.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293BE1FC83EAA000DF5C7 /* ccnf_patches_1.00_synth_lid_.txt */; };
-		CE9293F41FC83ECE000DF5C7 /* ccnf_patches_1.50_synth_lid_.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293BF1FC83EAA000DF5C7 /* ccnf_patches_1.50_synth_lid_.txt */; };
-		CE9293F51FC83ECE000DF5C7 /* left_ccnf_patches_1.00_synth_lid_.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293C01FC83EAA000DF5C7 /* left_ccnf_patches_1.00_synth_lid_.txt */; };
-		CE9293F61FC83ECE000DF5C7 /* left_ccnf_patches_1.50_synth_lid_.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293C11FC83EAA000DF5C7 /* left_ccnf_patches_1.50_synth_lid_.txt */; };
-		CE9293F71FC83ED1000DF5C7 /* pdm_28_eye_3D_closed.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293C31FC83EAA000DF5C7 /* pdm_28_eye_3D_closed.txt */; };
-		CE9293F81FC83ED1000DF5C7 /* pdm_28_l_eye_3D_closed.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293C41FC83EAA000DF5C7 /* pdm_28_l_eye_3D_closed.txt */; };
-		CE9293F91FC83ED7000DF5C7 /* clnf_inner.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293C61FC83EAA000DF5C7 /* clnf_inner.txt */; };
-		CE9293FA1FC83ED7000DF5C7 /* main_clnf_inner.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293C71FC83EAA000DF5C7 /* main_clnf_inner.txt */; };
-		CE9293FB1FC83EDB000DF5C7 /* ccnf_patches_1.00_inner.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293C91FC83EAA000DF5C7 /* ccnf_patches_1.00_inner.txt */; };
-		CE9293FC1FC83EDF000DF5C7 /* pdm_51_inner.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293CB1FC83EAA000DF5C7 /* pdm_51_inner.txt */; };
-		CE9293FD1FC83EE9000DF5C7 /* ccnf_patches_0.25_general.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293CD1FC83EAA000DF5C7 /* ccnf_patches_0.25_general.txt */; };
-		CE9293FE1FC83EE9000DF5C7 /* ccnf_patches_0.25_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293CE1FC83EAA000DF5C7 /* ccnf_patches_0.25_ibug_glasses.txt */; };
-		CE9293FF1FC83EE9000DF5C7 /* ccnf_patches_0.25_wild.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293CF1FC83EAA000DF5C7 /* ccnf_patches_0.25_wild.txt */; };
-		CE9294001FC83EE9000DF5C7 /* ccnf_patches_0.35_general.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293D01FC83EAA000DF5C7 /* ccnf_patches_0.35_general.txt */; };
-		CE9294011FC83EE9000DF5C7 /* ccnf_patches_0.35_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293D11FC83EAA000DF5C7 /* ccnf_patches_0.35_ibug_glasses.txt */; };
-		CE9294021FC83EE9000DF5C7 /* ccnf_patches_0.35_wild.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293D21FC83EAA000DF5C7 /* ccnf_patches_0.35_wild.txt */; };
-		CE9294031FC83EE9000DF5C7 /* ccnf_patches_0.5_general.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293D31FC83EAA000DF5C7 /* ccnf_patches_0.5_general.txt */; };
-		CE9294041FC83EE9000DF5C7 /* ccnf_patches_0.5_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293D41FC83EAA000DF5C7 /* ccnf_patches_0.5_ibug_glasses.txt */; };
-		CE9294051FC83EE9000DF5C7 /* ccnf_patches_0.5_wild.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293D51FC83EAA000DF5C7 /* ccnf_patches_0.5_wild.txt */; };
-		CE9294061FC83EE9000DF5C7 /* ccnf_patches_1_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293D61FC83EAA000DF5C7 /* ccnf_patches_1_ibug_glasses.txt */; };
-		CE9294071FC83EE9000DF5C7 /* ccnf_patches_1_wild.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293D71FC83EAA000DF5C7 /* ccnf_patches_1_wild.txt */; };
-		CE9294081FC83EE9000DF5C7 /* svr_patches_0.25_general.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293D81FC83EAA000DF5C7 /* svr_patches_0.25_general.txt */; };
-		CE9294091FC83EE9000DF5C7 /* svr_patches_0.25_wild.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293D91FC83EAA000DF5C7 /* svr_patches_0.25_wild.txt */; };
-		CE92940A1FC83EE9000DF5C7 /* svr_patches_0.35_general.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293DA1FC83EAA000DF5C7 /* svr_patches_0.35_general.txt */; };
-		CE92940B1FC83EE9000DF5C7 /* svr_patches_0.35_wild.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293DB1FC83EAA000DF5C7 /* svr_patches_0.35_wild.txt */; };
-		CE92940C1FC83EE9000DF5C7 /* svr_patches_0.5_general.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293DC1FC83EAA000DF5C7 /* svr_patches_0.5_general.txt */; };
-		CE92940D1FC83EE9000DF5C7 /* svr_patches_0.5_wild.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293DD1FC83EAA000DF5C7 /* svr_patches_0.5_wild.txt */; };
-		CE92940E1FC83EEF000DF5C7 /* In-the-wild_aligned_PDM_68.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293DF1FC83EAA000DF5C7 /* In-the-wild_aligned_PDM_68.txt */; };
-		CE92940F1FC83EEF000DF5C7 /* pdm_68_aligned_ibug+glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293E11FC83EAA000DF5C7 /* pdm_68_aligned_ibug+glasses.txt */; };
-		CE9294101FC83EF2000DF5C7 /* tris_68.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293E21FC83EAA000DF5C7 /* tris_68.txt */; };
-		CE9294111FC83EFE000DF5C7 /* validator_cnn.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293B01FC83EAA000DF5C7 /* validator_cnn.txt */; };
-		CE9294121FC83F06000DF5C7 /* pdm_68_aligned_ibug+glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293AD1FC83EAA000DF5C7 /* pdm_68_aligned_ibug+glasses.txt */; };
-		CE9294131FC83F0B000DF5C7 /* clnf_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293A21FC83EAA000DF5C7 /* clnf_ibug_glasses.txt */; };
-		CE9294141FC83F0B000DF5C7 /* main_clnf_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293A31FC83EAA000DF5C7 /* main_clnf_ibug_glasses.txt */; };
-		CE9294151FC83F10000DF5C7 /* ccnf_patches_0.25_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293A51FC83EAA000DF5C7 /* ccnf_patches_0.25_ibug_glasses.txt */; };
-		CE9294161FC83F10000DF5C7 /* ccnf_patches_0.35_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293A61FC83EAA000DF5C7 /* ccnf_patches_0.35_ibug_glasses.txt */; };
-		CE9294171FC83F10000DF5C7 /* ccnf_patches_0.5_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293A71FC83EAA000DF5C7 /* ccnf_patches_0.5_ibug_glasses.txt */; };
-		CE9294181FC83F10000DF5C7 /* ccnf_patches_1_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293A81FC83EAA000DF5C7 /* ccnf_patches_1_ibug_glasses.txt */; };
-		CE9294191FC83F13000DF5C7 /* pdm_68_aligned_ibug+glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293AA1FC83EAA000DF5C7 /* pdm_68_aligned_ibug+glasses.txt */; };
-		CE92941A1FC83F1D000DF5C7 /* ccnf_patches_0.25_ibug_glasses.mat in Resources */ = {isa = PBXBuildFile; fileRef = CE9293971FC83EAA000DF5C7 /* ccnf_patches_0.25_ibug_glasses.mat */; };
-		CE92941B1FC83F1D000DF5C7 /* ccnf_patches_0.25_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293981FC83EAA000DF5C7 /* ccnf_patches_0.25_ibug_glasses.txt */; };
-		CE92941C1FC83F1D000DF5C7 /* ccnf_patches_0.35_ibug_glasses.mat in Resources */ = {isa = PBXBuildFile; fileRef = CE9293991FC83EAA000DF5C7 /* ccnf_patches_0.35_ibug_glasses.mat */; };
-		CE92941D1FC83F1D000DF5C7 /* ccnf_patches_0.35_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE92939A1FC83EAA000DF5C7 /* ccnf_patches_0.35_ibug_glasses.txt */; };
-		CE92941E1FC83F1D000DF5C7 /* ccnf_patches_0.5_ibug_glasses.mat in Resources */ = {isa = PBXBuildFile; fileRef = CE92939B1FC83EAA000DF5C7 /* ccnf_patches_0.5_ibug_glasses.mat */; };
-		CE92941F1FC83F1D000DF5C7 /* ccnf_patches_0.5_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE92939C1FC83EAA000DF5C7 /* ccnf_patches_0.5_ibug_glasses.txt */; };
-		CE9294201FC83F1D000DF5C7 /* ccnf_patches_1_ibug_glasses.mat in Resources */ = {isa = PBXBuildFile; fileRef = CE92939D1FC83EAA000DF5C7 /* ccnf_patches_1_ibug_glasses.mat */; };
-		CE9294211FC83F1D000DF5C7 /* ccnf_patches_1_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE92939E1FC83EAA000DF5C7 /* ccnf_patches_1_ibug_glasses.txt */; };
-		CE9294221FC83F1D000DF5C7 /* imgs_used_ibug_glasses.mat in Resources */ = {isa = PBXBuildFile; fileRef = CE92939F1FC83EAA000DF5C7 /* imgs_used_ibug_glasses.mat */; };
-		CE9294231FC83F22000DF5C7 /* ccnf_patches_0.25_ibug_glasses.mat in Resources */ = {isa = PBXBuildFile; fileRef = CE92938D1FC83EAA000DF5C7 /* ccnf_patches_0.25_ibug_glasses.mat */; };
-		CE9294241FC83F22000DF5C7 /* ccnf_patches_0.25_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE92938E1FC83EAA000DF5C7 /* ccnf_patches_0.25_ibug_glasses.txt */; };
-		CE9294251FC83F22000DF5C7 /* ccnf_patches_0.35_ibug_glasses.mat in Resources */ = {isa = PBXBuildFile; fileRef = CE92938F1FC83EAA000DF5C7 /* ccnf_patches_0.35_ibug_glasses.mat */; };
-		CE9294261FC83F22000DF5C7 /* ccnf_patches_0.35_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293901FC83EAA000DF5C7 /* ccnf_patches_0.35_ibug_glasses.txt */; };
-		CE9294271FC83F22000DF5C7 /* ccnf_patches_0.5_ibug_glasses.mat in Resources */ = {isa = PBXBuildFile; fileRef = CE9293911FC83EAA000DF5C7 /* ccnf_patches_0.5_ibug_glasses.mat */; };
-		CE9294281FC83F22000DF5C7 /* ccnf_patches_0.5_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293921FC83EAA000DF5C7 /* ccnf_patches_0.5_ibug_glasses.txt */; };
-		CE9294291FC83F22000DF5C7 /* ccnf_patches_1_ibug_glasses.mat in Resources */ = {isa = PBXBuildFile; fileRef = CE9293931FC83EAA000DF5C7 /* ccnf_patches_1_ibug_glasses.mat */; };
-		CE92942A1FC83F22000DF5C7 /* ccnf_patches_1_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CE9293941FC83EAA000DF5C7 /* ccnf_patches_1_ibug_glasses.txt */; };
-		CE92942B1FC83F22000DF5C7 /* imgs_used_ibug_glasses.mat in Resources */ = {isa = PBXBuildFile; fileRef = CE9293951FC83EAA000DF5C7 /* imgs_used_ibug_glasses.mat */; };
+		CEAD60311FCD654A00A31FA6 /* ccnf_patches_1_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60041FCD653600A31FA6 /* ccnf_patches_1_ibug_glasses.txt */; };
+		CEAD60321FCD654A00A31FA6 /* ccnf_patches_1_wild.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD602D1FCD653A00A31FA6 /* ccnf_patches_1_wild.txt */; };
+		CEAD60331FCD654A00A31FA6 /* ccnf_patches_05_general.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD602F1FCD653A00A31FA6 /* ccnf_patches_05_general.txt */; };
+		CEAD60341FCD654A00A31FA6 /* ccnf_patches_05_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD600D1FCD653700A31FA6 /* ccnf_patches_05_ibug_glasses.txt */; };
+		CEAD60351FCD654A00A31FA6 /* ccnf_patches_05_wild.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60021FCD653600A31FA6 /* ccnf_patches_05_wild.txt */; };
+		CEAD60361FCD654A00A31FA6 /* ccnf_patches_025_general.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60111FCD653700A31FA6 /* ccnf_patches_025_general.txt */; };
+		CEAD60371FCD654A00A31FA6 /* ccnf_patches_025_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60131FCD653700A31FA6 /* ccnf_patches_025_ibug_glasses.txt */; };
+		CEAD60381FCD654A00A31FA6 /* ccnf_patches_025_wild.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60121FCD653700A31FA6 /* ccnf_patches_025_wild.txt */; };
+		CEAD60391FCD654A00A31FA6 /* ccnf_patches_035_general.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60301FCD653A00A31FA6 /* ccnf_patches_035_general.txt */; };
+		CEAD603A1FCD654A00A31FA6 /* ccnf_patches_035_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60141FCD653700A31FA6 /* ccnf_patches_035_ibug_glasses.txt */; };
+		CEAD603B1FCD654A00A31FA6 /* ccnf_patches_035_wild.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60051FCD653700A31FA6 /* ccnf_patches_035_wild.txt */; };
+		CEAD603C1FCD654A00A31FA6 /* ccnf_patches_100_inner.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD601B1FCD653800A31FA6 /* ccnf_patches_100_inner.txt */; };
+		CEAD603D1FCD654A00A31FA6 /* ccnf_patches_100_synth_lid_.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60151FCD653800A31FA6 /* ccnf_patches_100_synth_lid_.txt */; };
+		CEAD603E1FCD654A00A31FA6 /* ccnf_patches_150_synth_lid_.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD601C1FCD653800A31FA6 /* ccnf_patches_150_synth_lid_.txt */; };
+		CEAD60411FCD654A00A31FA6 /* clnf_general.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60031FCD653600A31FA6 /* clnf_general.txt */; };
+		CEAD60421FCD654A00A31FA6 /* clnf_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD602E1FCD653A00A31FA6 /* clnf_ibug_glasses.txt */; };
+		CEAD60431FCD654A00A31FA6 /* clnf_inner.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD600F1FCD653700A31FA6 /* clnf_inner.txt */; };
+		CEAD60441FCD654A00A31FA6 /* clnf_left_synth.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60211FCD653900A31FA6 /* clnf_left_synth.txt */; };
+		CEAD60451FCD654A00A31FA6 /* clnf_right_synth.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD600C1FCD653700A31FA6 /* clnf_right_synth.txt */; };
+		CEAD60461FCD654A00A31FA6 /* clnf_wild.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD600E1FCD653700A31FA6 /* clnf_wild.txt */; };
+		CEAD60471FCD654A00A31FA6 /* haar_align.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60061FCD653700A31FA6 /* haar_align.txt */; };
+		CEAD60481FCD654A00A31FA6 /* in_the_wild_aligned_pdm_68.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60241FCD653900A31FA6 /* in_the_wild_aligned_pdm_68.txt */; };
+		CEAD60491FCD654A00A31FA6 /* left_ccnf_patches_100_synth_lid_.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD602A1FCD653A00A31FA6 /* left_ccnf_patches_100_synth_lid_.txt */; };
+		CEAD604A1FCD654A00A31FA6 /* left_ccnf_patches_150_synth_lid_.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60291FCD653A00A31FA6 /* left_ccnf_patches_150_synth_lid_.txt */; };
+		CEAD604D1FCD654A00A31FA6 /* main_clnf_general_back.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD602C1FCD653A00A31FA6 /* main_clnf_general_back.txt */; };
+		CEAD604E1FCD654A00A31FA6 /* main_clnf_ibug_glasses_movile.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD601D1FCD653800A31FA6 /* main_clnf_ibug_glasses_movile.txt */; };
+		CEAD604F1FCD654A00A31FA6 /* main_clnf_inner.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60171FCD653800A31FA6 /* main_clnf_inner.txt */; };
+		CEAD60501FCD654A00A31FA6 /* main_clnf_synth_left.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60251FCD653900A31FA6 /* main_clnf_synth_left.txt */; };
+		CEAD60511FCD654A00A31FA6 /* main_clnf_synth_right.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD600B1FCD653700A31FA6 /* main_clnf_synth_right.txt */; };
+		CEAD60521FCD654A00A31FA6 /* main_clnf_wild.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD600A1FCD653700A31FA6 /* main_clnf_wild.txt */; };
+		CEAD60531FCD654A00A31FA6 /* pdm_28_eye_3d_closed.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60181FCD653800A31FA6 /* pdm_28_eye_3d_closed.txt */; };
+		CEAD60541FCD654A00A31FA6 /* pdm_28_l_eye_3d_closed.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60191FCD653800A31FA6 /* pdm_28_l_eye_3d_closed.txt */; };
+		CEAD60551FCD654A00A31FA6 /* pdm_51_inner.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD601E1FCD653800A31FA6 /* pdm_51_inner.txt */; };
+		CEAD60561FCD654A00A31FA6 /* pdm_68_aligned_ibug_glasses.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD602B1FCD653A00A31FA6 /* pdm_68_aligned_ibug_glasses.txt */; };
+		CEAD605D1FCD654A00A31FA6 /* tris_68_full.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60271FCD653900A31FA6 /* tris_68_full.txt */; };
+		CEAD605E1FCD654A00A31FA6 /* tris_68.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60071FCD653700A31FA6 /* tris_68.txt */; };
+		CEAD605F1FCD654A00A31FA6 /* validator_cnn.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60281FCD653900A31FA6 /* validator_cnn.txt */; };
+		CEAD60601FCD654A00A31FA6 /* validator_general_68.txt in Resources */ = {isa = PBXBuildFile; fileRef = CEAD60081FCD653700A31FA6 /* validator_general_68.txt */; };
 		EB38FEF6182BAE04004A705C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB38FEF5182BAE04004A705C /* Foundation.framework */; };
 		EB38FEF8182BAE04004A705C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB38FEF7182BAE04004A705C /* CoreGraphics.framework */; };
 		EB38FEFA182BAE04004A705C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB38FEF9182BAE04004A705C /* UIKit.framework */; };
@@ -192,83 +158,45 @@
 		CE9292F91FC81F0B000DF5C7 /* stdafx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stdafx.cpp; sourceTree = "<group>"; };
 		CE9292FA1FC81F0B000DF5C7 /* SVR_patch_expert.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SVR_patch_expert.cpp; sourceTree = "<group>"; };
 		CE9292FB1FC81F9C000DF5C7 /* dlib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = dlib.framework; sourceTree = "<group>"; };
-		CE9293871FC83EAA000DF5C7 /* clm_general.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = clm_general.txt; sourceTree = "<group>"; };
-		CE9293881FC83EAA000DF5C7 /* clm_wild.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = clm_wild.txt; sourceTree = "<group>"; };
-		CE9293891FC83EAA000DF5C7 /* clnf_general.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = clnf_general.txt; sourceTree = "<group>"; };
-		CE92938A1FC83EAA000DF5C7 /* clnf_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = clnf_ibug_glasses.txt; sourceTree = "<group>"; };
-		CE92938B1FC83EAA000DF5C7 /* clnf_wild.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = clnf_wild.txt; sourceTree = "<group>"; };
-		CE92938D1FC83EAA000DF5C7 /* ccnf_patches_0.25_ibug_glasses.mat */ = {isa = PBXFileReference; lastKnownFileType = file; path = ccnf_patches_0.25_ibug_glasses.mat; sourceTree = "<group>"; };
-		CE92938E1FC83EAA000DF5C7 /* ccnf_patches_0.25_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_0.25_ibug_glasses.txt; sourceTree = "<group>"; };
-		CE92938F1FC83EAA000DF5C7 /* ccnf_patches_0.35_ibug_glasses.mat */ = {isa = PBXFileReference; lastKnownFileType = file; path = ccnf_patches_0.35_ibug_glasses.mat; sourceTree = "<group>"; };
-		CE9293901FC83EAA000DF5C7 /* ccnf_patches_0.35_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_0.35_ibug_glasses.txt; sourceTree = "<group>"; };
-		CE9293911FC83EAA000DF5C7 /* ccnf_patches_0.5_ibug_glasses.mat */ = {isa = PBXFileReference; lastKnownFileType = file; path = ccnf_patches_0.5_ibug_glasses.mat; sourceTree = "<group>"; };
-		CE9293921FC83EAA000DF5C7 /* ccnf_patches_0.5_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_0.5_ibug_glasses.txt; sourceTree = "<group>"; };
-		CE9293931FC83EAA000DF5C7 /* ccnf_patches_1_ibug_glasses.mat */ = {isa = PBXFileReference; lastKnownFileType = file; path = ccnf_patches_1_ibug_glasses.mat; sourceTree = "<group>"; };
-		CE9293941FC83EAA000DF5C7 /* ccnf_patches_1_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_1_ibug_glasses.txt; sourceTree = "<group>"; };
-		CE9293951FC83EAA000DF5C7 /* imgs_used_ibug_glasses.mat */ = {isa = PBXFileReference; lastKnownFileType = file; path = imgs_used_ibug_glasses.mat; sourceTree = "<group>"; };
-		CE9293971FC83EAA000DF5C7 /* ccnf_patches_0.25_ibug_glasses.mat */ = {isa = PBXFileReference; lastKnownFileType = file; path = ccnf_patches_0.25_ibug_glasses.mat; sourceTree = "<group>"; };
-		CE9293981FC83EAA000DF5C7 /* ccnf_patches_0.25_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_0.25_ibug_glasses.txt; sourceTree = "<group>"; };
-		CE9293991FC83EAA000DF5C7 /* ccnf_patches_0.35_ibug_glasses.mat */ = {isa = PBXFileReference; lastKnownFileType = file; path = ccnf_patches_0.35_ibug_glasses.mat; sourceTree = "<group>"; };
-		CE92939A1FC83EAA000DF5C7 /* ccnf_patches_0.35_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_0.35_ibug_glasses.txt; sourceTree = "<group>"; };
-		CE92939B1FC83EAA000DF5C7 /* ccnf_patches_0.5_ibug_glasses.mat */ = {isa = PBXFileReference; lastKnownFileType = file; path = ccnf_patches_0.5_ibug_glasses.mat; sourceTree = "<group>"; };
-		CE92939C1FC83EAA000DF5C7 /* ccnf_patches_0.5_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_0.5_ibug_glasses.txt; sourceTree = "<group>"; };
-		CE92939D1FC83EAA000DF5C7 /* ccnf_patches_1_ibug_glasses.mat */ = {isa = PBXFileReference; lastKnownFileType = file; path = ccnf_patches_1_ibug_glasses.mat; sourceTree = "<group>"; };
-		CE92939E1FC83EAA000DF5C7 /* ccnf_patches_1_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_1_ibug_glasses.txt; sourceTree = "<group>"; };
-		CE92939F1FC83EAA000DF5C7 /* imgs_used_ibug_glasses.mat */ = {isa = PBXFileReference; lastKnownFileType = file; path = imgs_used_ibug_glasses.mat; sourceTree = "<group>"; };
-		CE9293A21FC83EAA000DF5C7 /* clnf_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = clnf_ibug_glasses.txt; sourceTree = "<group>"; };
-		CE9293A31FC83EAA000DF5C7 /* main_clnf_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = main_clnf_ibug_glasses.txt; sourceTree = "<group>"; };
-		CE9293A51FC83EAA000DF5C7 /* ccnf_patches_0.25_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_0.25_ibug_glasses.txt; sourceTree = "<group>"; };
-		CE9293A61FC83EAA000DF5C7 /* ccnf_patches_0.35_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_0.35_ibug_glasses.txt; sourceTree = "<group>"; };
-		CE9293A71FC83EAA000DF5C7 /* ccnf_patches_0.5_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_0.5_ibug_glasses.txt; sourceTree = "<group>"; };
-		CE9293A81FC83EAA000DF5C7 /* ccnf_patches_1_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_1_ibug_glasses.txt; sourceTree = "<group>"; };
-		CE9293AA1FC83EAA000DF5C7 /* pdm_68_aligned_ibug+glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "pdm_68_aligned_ibug+glasses.txt"; sourceTree = "<group>"; };
-		CE9293AC1FC83EAA000DF5C7 /* pdm_68_aligned_ibug+glasses.mat */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pdm_68_aligned_ibug+glasses.mat"; sourceTree = "<group>"; };
-		CE9293AD1FC83EAA000DF5C7 /* pdm_68_aligned_ibug+glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "pdm_68_aligned_ibug+glasses.txt"; sourceTree = "<group>"; };
-		CE9293B01FC83EAA000DF5C7 /* validator_cnn.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = validator_cnn.txt; sourceTree = "<group>"; };
-		CE9293B11FC83EAA000DF5C7 /* validator_general_68.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = validator_general_68.txt; sourceTree = "<group>"; };
-		CE9293B21FC83EAA000DF5C7 /* haarAlign.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = haarAlign.txt; sourceTree = "<group>"; };
-		CE9293B31FC83EAA000DF5C7 /* main_clm_general.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = main_clm_general.txt; sourceTree = "<group>"; };
-		CE9293B41FC83EAA000DF5C7 /* main_clm_wild.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = main_clm_wild.txt; sourceTree = "<group>"; };
-		CE9293B51FC83EAA000DF5C7 /* main_clnf_general_back.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = main_clnf_general_back.txt; sourceTree = "<group>"; };
-		CE9293B61FC83EAA000DF5C7 /* main_clnf_ibug_glasses_movile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = main_clnf_ibug_glasses_movile.txt; sourceTree = "<group>"; };
-		CE9293B71FC83EAA000DF5C7 /* main_clnf_wild.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = main_clnf_wild.txt; sourceTree = "<group>"; };
-		CE9293B91FC83EAA000DF5C7 /* clnf_left_synth.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = clnf_left_synth.txt; sourceTree = "<group>"; };
-		CE9293BA1FC83EAA000DF5C7 /* clnf_right_synth.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = clnf_right_synth.txt; sourceTree = "<group>"; };
-		CE9293BB1FC83EAA000DF5C7 /* main_clnf_synth_left.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = main_clnf_synth_left.txt; sourceTree = "<group>"; };
-		CE9293BC1FC83EAA000DF5C7 /* main_clnf_synth_right.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = main_clnf_synth_right.txt; sourceTree = "<group>"; };
-		CE9293BE1FC83EAA000DF5C7 /* ccnf_patches_1.00_synth_lid_.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_1.00_synth_lid_.txt; sourceTree = "<group>"; };
-		CE9293BF1FC83EAA000DF5C7 /* ccnf_patches_1.50_synth_lid_.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_1.50_synth_lid_.txt; sourceTree = "<group>"; };
-		CE9293C01FC83EAA000DF5C7 /* left_ccnf_patches_1.00_synth_lid_.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = left_ccnf_patches_1.00_synth_lid_.txt; sourceTree = "<group>"; };
-		CE9293C11FC83EAA000DF5C7 /* left_ccnf_patches_1.50_synth_lid_.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = left_ccnf_patches_1.50_synth_lid_.txt; sourceTree = "<group>"; };
-		CE9293C31FC83EAA000DF5C7 /* pdm_28_eye_3D_closed.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = pdm_28_eye_3D_closed.txt; sourceTree = "<group>"; };
-		CE9293C41FC83EAA000DF5C7 /* pdm_28_l_eye_3D_closed.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = pdm_28_l_eye_3D_closed.txt; sourceTree = "<group>"; };
-		CE9293C61FC83EAA000DF5C7 /* clnf_inner.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = clnf_inner.txt; sourceTree = "<group>"; };
-		CE9293C71FC83EAA000DF5C7 /* main_clnf_inner.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = main_clnf_inner.txt; sourceTree = "<group>"; };
-		CE9293C91FC83EAA000DF5C7 /* ccnf_patches_1.00_inner.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_1.00_inner.txt; sourceTree = "<group>"; };
-		CE9293CB1FC83EAA000DF5C7 /* pdm_51_inner.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = pdm_51_inner.txt; sourceTree = "<group>"; };
-		CE9293CD1FC83EAA000DF5C7 /* ccnf_patches_0.25_general.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_0.25_general.txt; sourceTree = "<group>"; };
-		CE9293CE1FC83EAA000DF5C7 /* ccnf_patches_0.25_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_0.25_ibug_glasses.txt; sourceTree = "<group>"; };
-		CE9293CF1FC83EAA000DF5C7 /* ccnf_patches_0.25_wild.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_0.25_wild.txt; sourceTree = "<group>"; };
-		CE9293D01FC83EAA000DF5C7 /* ccnf_patches_0.35_general.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_0.35_general.txt; sourceTree = "<group>"; };
-		CE9293D11FC83EAA000DF5C7 /* ccnf_patches_0.35_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_0.35_ibug_glasses.txt; sourceTree = "<group>"; };
-		CE9293D21FC83EAA000DF5C7 /* ccnf_patches_0.35_wild.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_0.35_wild.txt; sourceTree = "<group>"; };
-		CE9293D31FC83EAA000DF5C7 /* ccnf_patches_0.5_general.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_0.5_general.txt; sourceTree = "<group>"; };
-		CE9293D41FC83EAA000DF5C7 /* ccnf_patches_0.5_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_0.5_ibug_glasses.txt; sourceTree = "<group>"; };
-		CE9293D51FC83EAA000DF5C7 /* ccnf_patches_0.5_wild.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_0.5_wild.txt; sourceTree = "<group>"; };
-		CE9293D61FC83EAA000DF5C7 /* ccnf_patches_1_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_1_ibug_glasses.txt; sourceTree = "<group>"; };
-		CE9293D71FC83EAA000DF5C7 /* ccnf_patches_1_wild.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ccnf_patches_1_wild.txt; sourceTree = "<group>"; };
-		CE9293D81FC83EAA000DF5C7 /* svr_patches_0.25_general.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = svr_patches_0.25_general.txt; sourceTree = "<group>"; };
-		CE9293D91FC83EAA000DF5C7 /* svr_patches_0.25_wild.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = svr_patches_0.25_wild.txt; sourceTree = "<group>"; };
-		CE9293DA1FC83EAA000DF5C7 /* svr_patches_0.35_general.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = svr_patches_0.35_general.txt; sourceTree = "<group>"; };
-		CE9293DB1FC83EAA000DF5C7 /* svr_patches_0.35_wild.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = svr_patches_0.35_wild.txt; sourceTree = "<group>"; };
-		CE9293DC1FC83EAA000DF5C7 /* svr_patches_0.5_general.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = svr_patches_0.5_general.txt; sourceTree = "<group>"; };
-		CE9293DD1FC83EAA000DF5C7 /* svr_patches_0.5_wild.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = svr_patches_0.5_wild.txt; sourceTree = "<group>"; };
-		CE9293DF1FC83EAA000DF5C7 /* In-the-wild_aligned_PDM_68.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "In-the-wild_aligned_PDM_68.txt"; sourceTree = "<group>"; };
-		CE9293E01FC83EAA000DF5C7 /* Multi-PIE_aligned_PDM_68.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Multi-PIE_aligned_PDM_68.txt"; sourceTree = "<group>"; };
-		CE9293E11FC83EAA000DF5C7 /* pdm_68_aligned_ibug+glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "pdm_68_aligned_ibug+glasses.txt"; sourceTree = "<group>"; };
-		CE9293E21FC83EAA000DF5C7 /* tris_68.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = tris_68.txt; sourceTree = "<group>"; };
-		CE9293E31FC83EAA000DF5C7 /* tris_68_full.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = tris_68_full.txt; sourceTree = "<group>"; };
 		CE92942C1FCC2C7E000DF5C7 /* universalTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = universalTimer.h; path = NativeCode/universalTimer.h; sourceTree = "<group>"; };
+		CEAD60021FCD653600A31FA6 /* ccnf_patches_05_wild.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ccnf_patches_05_wild.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/ccnf_patches_05_wild.txt; sourceTree = "<group>"; };
+		CEAD60031FCD653600A31FA6 /* clnf_general.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = clnf_general.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/clnf_general.txt; sourceTree = "<group>"; };
+		CEAD60041FCD653600A31FA6 /* ccnf_patches_1_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ccnf_patches_1_ibug_glasses.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/ccnf_patches_1_ibug_glasses.txt; sourceTree = "<group>"; };
+		CEAD60051FCD653700A31FA6 /* ccnf_patches_035_wild.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ccnf_patches_035_wild.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/ccnf_patches_035_wild.txt; sourceTree = "<group>"; };
+		CEAD60061FCD653700A31FA6 /* haar_align.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = haar_align.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/haar_align.txt; sourceTree = "<group>"; };
+		CEAD60071FCD653700A31FA6 /* tris_68.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = tris_68.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/tris_68.txt; sourceTree = "<group>"; };
+		CEAD60081FCD653700A31FA6 /* validator_general_68.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = validator_general_68.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/validator_general_68.txt; sourceTree = "<group>"; };
+		CEAD600A1FCD653700A31FA6 /* main_clnf_wild.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = main_clnf_wild.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/main_clnf_wild.txt; sourceTree = "<group>"; };
+		CEAD600B1FCD653700A31FA6 /* main_clnf_synth_right.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = main_clnf_synth_right.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/main_clnf_synth_right.txt; sourceTree = "<group>"; };
+		CEAD600C1FCD653700A31FA6 /* clnf_right_synth.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = clnf_right_synth.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/clnf_right_synth.txt; sourceTree = "<group>"; };
+		CEAD600D1FCD653700A31FA6 /* ccnf_patches_05_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ccnf_patches_05_ibug_glasses.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/ccnf_patches_05_ibug_glasses.txt; sourceTree = "<group>"; };
+		CEAD600E1FCD653700A31FA6 /* clnf_wild.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = clnf_wild.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/clnf_wild.txt; sourceTree = "<group>"; };
+		CEAD600F1FCD653700A31FA6 /* clnf_inner.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = clnf_inner.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/clnf_inner.txt; sourceTree = "<group>"; };
+		CEAD60111FCD653700A31FA6 /* ccnf_patches_025_general.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ccnf_patches_025_general.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/ccnf_patches_025_general.txt; sourceTree = "<group>"; };
+		CEAD60121FCD653700A31FA6 /* ccnf_patches_025_wild.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ccnf_patches_025_wild.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/ccnf_patches_025_wild.txt; sourceTree = "<group>"; };
+		CEAD60131FCD653700A31FA6 /* ccnf_patches_025_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ccnf_patches_025_ibug_glasses.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/ccnf_patches_025_ibug_glasses.txt; sourceTree = "<group>"; };
+		CEAD60141FCD653700A31FA6 /* ccnf_patches_035_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ccnf_patches_035_ibug_glasses.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/ccnf_patches_035_ibug_glasses.txt; sourceTree = "<group>"; };
+		CEAD60151FCD653800A31FA6 /* ccnf_patches_100_synth_lid_.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ccnf_patches_100_synth_lid_.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/ccnf_patches_100_synth_lid_.txt; sourceTree = "<group>"; };
+		CEAD60171FCD653800A31FA6 /* main_clnf_inner.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = main_clnf_inner.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/main_clnf_inner.txt; sourceTree = "<group>"; };
+		CEAD60181FCD653800A31FA6 /* pdm_28_eye_3d_closed.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = pdm_28_eye_3d_closed.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/pdm_28_eye_3d_closed.txt; sourceTree = "<group>"; };
+		CEAD60191FCD653800A31FA6 /* pdm_28_l_eye_3d_closed.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = pdm_28_l_eye_3d_closed.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/pdm_28_l_eye_3d_closed.txt; sourceTree = "<group>"; };
+		CEAD601B1FCD653800A31FA6 /* ccnf_patches_100_inner.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ccnf_patches_100_inner.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/ccnf_patches_100_inner.txt; sourceTree = "<group>"; };
+		CEAD601C1FCD653800A31FA6 /* ccnf_patches_150_synth_lid_.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ccnf_patches_150_synth_lid_.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/ccnf_patches_150_synth_lid_.txt; sourceTree = "<group>"; };
+		CEAD601D1FCD653800A31FA6 /* main_clnf_ibug_glasses_movile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = main_clnf_ibug_glasses_movile.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/main_clnf_ibug_glasses_movile.txt; sourceTree = "<group>"; };
+		CEAD601E1FCD653800A31FA6 /* pdm_51_inner.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = pdm_51_inner.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/pdm_51_inner.txt; sourceTree = "<group>"; };
+		CEAD60211FCD653900A31FA6 /* clnf_left_synth.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = clnf_left_synth.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/clnf_left_synth.txt; sourceTree = "<group>"; };
+		CEAD60241FCD653900A31FA6 /* in_the_wild_aligned_pdm_68.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = in_the_wild_aligned_pdm_68.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/in_the_wild_aligned_pdm_68.txt; sourceTree = "<group>"; };
+		CEAD60251FCD653900A31FA6 /* main_clnf_synth_left.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = main_clnf_synth_left.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/main_clnf_synth_left.txt; sourceTree = "<group>"; };
+		CEAD60271FCD653900A31FA6 /* tris_68_full.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = tris_68_full.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/tris_68_full.txt; sourceTree = "<group>"; };
+		CEAD60281FCD653900A31FA6 /* validator_cnn.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = validator_cnn.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/validator_cnn.txt; sourceTree = "<group>"; };
+		CEAD60291FCD653A00A31FA6 /* left_ccnf_patches_150_synth_lid_.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = left_ccnf_patches_150_synth_lid_.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/left_ccnf_patches_150_synth_lid_.txt; sourceTree = "<group>"; };
+		CEAD602A1FCD653A00A31FA6 /* left_ccnf_patches_100_synth_lid_.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = left_ccnf_patches_100_synth_lid_.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/left_ccnf_patches_100_synth_lid_.txt; sourceTree = "<group>"; };
+		CEAD602B1FCD653A00A31FA6 /* pdm_68_aligned_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = pdm_68_aligned_ibug_glasses.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/pdm_68_aligned_ibug_glasses.txt; sourceTree = "<group>"; };
+		CEAD602C1FCD653A00A31FA6 /* main_clnf_general_back.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = main_clnf_general_back.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/main_clnf_general_back.txt; sourceTree = "<group>"; };
+		CEAD602D1FCD653A00A31FA6 /* ccnf_patches_1_wild.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ccnf_patches_1_wild.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/ccnf_patches_1_wild.txt; sourceTree = "<group>"; };
+		CEAD602E1FCD653A00A31FA6 /* clnf_ibug_glasses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = clnf_ibug_glasses.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/clnf_ibug_glasses.txt; sourceTree = "<group>"; };
+		CEAD602F1FCD653A00A31FA6 /* ccnf_patches_05_general.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ccnf_patches_05_general.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/ccnf_patches_05_general.txt; sourceTree = "<group>"; };
+		CEAD60301FCD653A00A31FA6 /* ccnf_patches_035_general.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ccnf_patches_035_general.txt; path = ../../../../OpenFaceDemo/app/src/main/res/raw/ccnf_patches_035_general.txt; sourceTree = "<group>"; };
 		EB38FEF2182BAE04004A705C /* CaptureAndRenderSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaptureAndRenderSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB38FEF5182BAE04004A705C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB38FEF7182BAE04004A705C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -478,205 +406,47 @@
 		CE9293861FC83EAA000DF5C7 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				CE9293871FC83EAA000DF5C7 /* clm_general.txt */,
-				CE9293881FC83EAA000DF5C7 /* clm_wild.txt */,
-				CE9293891FC83EAA000DF5C7 /* clnf_general.txt */,
-				CE92938A1FC83EAA000DF5C7 /* clnf_ibug_glasses.txt */,
-				CE92938B1FC83EAA000DF5C7 /* clnf_wild.txt */,
-				CE92938C1FC83EAA000DF5C7 /* custom_ccnf_ibug_glasses */,
-				CE9293961FC83EAA000DF5C7 /* custom_ccnf_ibug_glasses 2 */,
-				CE9293A11FC83EAA000DF5C7 /* custom_elements */,
-				CE9293AB1FC83EAA000DF5C7 /* custom_trained_pdm_ibug_glasses */,
-				CE9293AF1FC83EAA000DF5C7 /* detection_validation */,
-				CE9293B21FC83EAA000DF5C7 /* haarAlign.txt */,
-				CE9293B31FC83EAA000DF5C7 /* main_clm_general.txt */,
-				CE9293B41FC83EAA000DF5C7 /* main_clm_wild.txt */,
-				CE9293B51FC83EAA000DF5C7 /* main_clnf_general_back.txt */,
-				CE9293B61FC83EAA000DF5C7 /* main_clnf_ibug_glasses_movile.txt */,
-				CE9293B71FC83EAA000DF5C7 /* main_clnf_wild.txt */,
-				CE9293B81FC83EAA000DF5C7 /* model_eye */,
-				CE9293C51FC83EAA000DF5C7 /* model_inner */,
-				CE9293CC1FC83EAA000DF5C7 /* patch_experts */,
-				CE9293DE1FC83EAA000DF5C7 /* pdms */,
-				CE9293E21FC83EAA000DF5C7 /* tris_68.txt */,
-				CE9293E31FC83EAA000DF5C7 /* tris_68_full.txt */,
+				CEAD60041FCD653600A31FA6 /* ccnf_patches_1_ibug_glasses.txt */,
+				CEAD602D1FCD653A00A31FA6 /* ccnf_patches_1_wild.txt */,
+				CEAD602F1FCD653A00A31FA6 /* ccnf_patches_05_general.txt */,
+				CEAD600D1FCD653700A31FA6 /* ccnf_patches_05_ibug_glasses.txt */,
+				CEAD60021FCD653600A31FA6 /* ccnf_patches_05_wild.txt */,
+				CEAD60111FCD653700A31FA6 /* ccnf_patches_025_general.txt */,
+				CEAD60131FCD653700A31FA6 /* ccnf_patches_025_ibug_glasses.txt */,
+				CEAD60121FCD653700A31FA6 /* ccnf_patches_025_wild.txt */,
+				CEAD60301FCD653A00A31FA6 /* ccnf_patches_035_general.txt */,
+				CEAD60141FCD653700A31FA6 /* ccnf_patches_035_ibug_glasses.txt */,
+				CEAD60051FCD653700A31FA6 /* ccnf_patches_035_wild.txt */,
+				CEAD601B1FCD653800A31FA6 /* ccnf_patches_100_inner.txt */,
+				CEAD60151FCD653800A31FA6 /* ccnf_patches_100_synth_lid_.txt */,
+				CEAD601C1FCD653800A31FA6 /* ccnf_patches_150_synth_lid_.txt */,
+				CEAD60031FCD653600A31FA6 /* clnf_general.txt */,
+				CEAD602E1FCD653A00A31FA6 /* clnf_ibug_glasses.txt */,
+				CEAD600F1FCD653700A31FA6 /* clnf_inner.txt */,
+				CEAD60211FCD653900A31FA6 /* clnf_left_synth.txt */,
+				CEAD600C1FCD653700A31FA6 /* clnf_right_synth.txt */,
+				CEAD600E1FCD653700A31FA6 /* clnf_wild.txt */,
+				CEAD60061FCD653700A31FA6 /* haar_align.txt */,
+				CEAD60241FCD653900A31FA6 /* in_the_wild_aligned_pdm_68.txt */,
+				CEAD602A1FCD653A00A31FA6 /* left_ccnf_patches_100_synth_lid_.txt */,
+				CEAD60291FCD653A00A31FA6 /* left_ccnf_patches_150_synth_lid_.txt */,
+				CEAD602C1FCD653A00A31FA6 /* main_clnf_general_back.txt */,
+				CEAD601D1FCD653800A31FA6 /* main_clnf_ibug_glasses_movile.txt */,
+				CEAD60171FCD653800A31FA6 /* main_clnf_inner.txt */,
+				CEAD60251FCD653900A31FA6 /* main_clnf_synth_left.txt */,
+				CEAD600B1FCD653700A31FA6 /* main_clnf_synth_right.txt */,
+				CEAD600A1FCD653700A31FA6 /* main_clnf_wild.txt */,
+				CEAD60181FCD653800A31FA6 /* pdm_28_eye_3d_closed.txt */,
+				CEAD60191FCD653800A31FA6 /* pdm_28_l_eye_3d_closed.txt */,
+				CEAD601E1FCD653800A31FA6 /* pdm_51_inner.txt */,
+				CEAD602B1FCD653A00A31FA6 /* pdm_68_aligned_ibug_glasses.txt */,
+				CEAD60271FCD653900A31FA6 /* tris_68_full.txt */,
+				CEAD60071FCD653700A31FA6 /* tris_68.txt */,
+				CEAD60281FCD653900A31FA6 /* validator_cnn.txt */,
+				CEAD60081FCD653700A31FA6 /* validator_general_68.txt */,
 			);
 			name = model;
 			path = Resources/model;
-			sourceTree = "<group>";
-		};
-		CE92938C1FC83EAA000DF5C7 /* custom_ccnf_ibug_glasses */ = {
-			isa = PBXGroup;
-			children = (
-				CE92938D1FC83EAA000DF5C7 /* ccnf_patches_0.25_ibug_glasses.mat */,
-				CE92938E1FC83EAA000DF5C7 /* ccnf_patches_0.25_ibug_glasses.txt */,
-				CE92938F1FC83EAA000DF5C7 /* ccnf_patches_0.35_ibug_glasses.mat */,
-				CE9293901FC83EAA000DF5C7 /* ccnf_patches_0.35_ibug_glasses.txt */,
-				CE9293911FC83EAA000DF5C7 /* ccnf_patches_0.5_ibug_glasses.mat */,
-				CE9293921FC83EAA000DF5C7 /* ccnf_patches_0.5_ibug_glasses.txt */,
-				CE9293931FC83EAA000DF5C7 /* ccnf_patches_1_ibug_glasses.mat */,
-				CE9293941FC83EAA000DF5C7 /* ccnf_patches_1_ibug_glasses.txt */,
-				CE9293951FC83EAA000DF5C7 /* imgs_used_ibug_glasses.mat */,
-			);
-			path = custom_ccnf_ibug_glasses;
-			sourceTree = "<group>";
-		};
-		CE9293961FC83EAA000DF5C7 /* custom_ccnf_ibug_glasses 2 */ = {
-			isa = PBXGroup;
-			children = (
-				CE9293971FC83EAA000DF5C7 /* ccnf_patches_0.25_ibug_glasses.mat */,
-				CE9293981FC83EAA000DF5C7 /* ccnf_patches_0.25_ibug_glasses.txt */,
-				CE9293991FC83EAA000DF5C7 /* ccnf_patches_0.35_ibug_glasses.mat */,
-				CE92939A1FC83EAA000DF5C7 /* ccnf_patches_0.35_ibug_glasses.txt */,
-				CE92939B1FC83EAA000DF5C7 /* ccnf_patches_0.5_ibug_glasses.mat */,
-				CE92939C1FC83EAA000DF5C7 /* ccnf_patches_0.5_ibug_glasses.txt */,
-				CE92939D1FC83EAA000DF5C7 /* ccnf_patches_1_ibug_glasses.mat */,
-				CE92939E1FC83EAA000DF5C7 /* ccnf_patches_1_ibug_glasses.txt */,
-				CE92939F1FC83EAA000DF5C7 /* imgs_used_ibug_glasses.mat */,
-			);
-			path = "custom_ccnf_ibug_glasses 2";
-			sourceTree = "<group>";
-		};
-		CE9293A11FC83EAA000DF5C7 /* custom_elements */ = {
-			isa = PBXGroup;
-			children = (
-				CE9293A21FC83EAA000DF5C7 /* clnf_ibug_glasses.txt */,
-				CE9293A31FC83EAA000DF5C7 /* main_clnf_ibug_glasses.txt */,
-				CE9293A41FC83EAA000DF5C7 /* patch_experts */,
-				CE9293A91FC83EAA000DF5C7 /* pdms */,
-			);
-			path = custom_elements;
-			sourceTree = "<group>";
-		};
-		CE9293A41FC83EAA000DF5C7 /* patch_experts */ = {
-			isa = PBXGroup;
-			children = (
-				CE9293A51FC83EAA000DF5C7 /* ccnf_patches_0.25_ibug_glasses.txt */,
-				CE9293A61FC83EAA000DF5C7 /* ccnf_patches_0.35_ibug_glasses.txt */,
-				CE9293A71FC83EAA000DF5C7 /* ccnf_patches_0.5_ibug_glasses.txt */,
-				CE9293A81FC83EAA000DF5C7 /* ccnf_patches_1_ibug_glasses.txt */,
-			);
-			path = patch_experts;
-			sourceTree = "<group>";
-		};
-		CE9293A91FC83EAA000DF5C7 /* pdms */ = {
-			isa = PBXGroup;
-			children = (
-				CE9293AA1FC83EAA000DF5C7 /* pdm_68_aligned_ibug+glasses.txt */,
-			);
-			path = pdms;
-			sourceTree = "<group>";
-		};
-		CE9293AB1FC83EAA000DF5C7 /* custom_trained_pdm_ibug_glasses */ = {
-			isa = PBXGroup;
-			children = (
-				CE9293AC1FC83EAA000DF5C7 /* pdm_68_aligned_ibug+glasses.mat */,
-				CE9293AD1FC83EAA000DF5C7 /* pdm_68_aligned_ibug+glasses.txt */,
-			);
-			path = custom_trained_pdm_ibug_glasses;
-			sourceTree = "<group>";
-		};
-		CE9293AF1FC83EAA000DF5C7 /* detection_validation */ = {
-			isa = PBXGroup;
-			children = (
-				CE9293B01FC83EAA000DF5C7 /* validator_cnn.txt */,
-				CE9293B11FC83EAA000DF5C7 /* validator_general_68.txt */,
-			);
-			path = detection_validation;
-			sourceTree = "<group>";
-		};
-		CE9293B81FC83EAA000DF5C7 /* model_eye */ = {
-			isa = PBXGroup;
-			children = (
-				CE9293B91FC83EAA000DF5C7 /* clnf_left_synth.txt */,
-				CE9293BA1FC83EAA000DF5C7 /* clnf_right_synth.txt */,
-				CE9293BB1FC83EAA000DF5C7 /* main_clnf_synth_left.txt */,
-				CE9293BC1FC83EAA000DF5C7 /* main_clnf_synth_right.txt */,
-				CE9293BD1FC83EAA000DF5C7 /* patch_experts */,
-				CE9293C21FC83EAA000DF5C7 /* pdms */,
-			);
-			path = model_eye;
-			sourceTree = "<group>";
-		};
-		CE9293BD1FC83EAA000DF5C7 /* patch_experts */ = {
-			isa = PBXGroup;
-			children = (
-				CE9293BE1FC83EAA000DF5C7 /* ccnf_patches_1.00_synth_lid_.txt */,
-				CE9293BF1FC83EAA000DF5C7 /* ccnf_patches_1.50_synth_lid_.txt */,
-				CE9293C01FC83EAA000DF5C7 /* left_ccnf_patches_1.00_synth_lid_.txt */,
-				CE9293C11FC83EAA000DF5C7 /* left_ccnf_patches_1.50_synth_lid_.txt */,
-			);
-			path = patch_experts;
-			sourceTree = "<group>";
-		};
-		CE9293C21FC83EAA000DF5C7 /* pdms */ = {
-			isa = PBXGroup;
-			children = (
-				CE9293C31FC83EAA000DF5C7 /* pdm_28_eye_3D_closed.txt */,
-				CE9293C41FC83EAA000DF5C7 /* pdm_28_l_eye_3D_closed.txt */,
-			);
-			path = pdms;
-			sourceTree = "<group>";
-		};
-		CE9293C51FC83EAA000DF5C7 /* model_inner */ = {
-			isa = PBXGroup;
-			children = (
-				CE9293C61FC83EAA000DF5C7 /* clnf_inner.txt */,
-				CE9293C71FC83EAA000DF5C7 /* main_clnf_inner.txt */,
-				CE9293C81FC83EAA000DF5C7 /* patch_experts */,
-				CE9293CA1FC83EAA000DF5C7 /* pdms */,
-			);
-			path = model_inner;
-			sourceTree = "<group>";
-		};
-		CE9293C81FC83EAA000DF5C7 /* patch_experts */ = {
-			isa = PBXGroup;
-			children = (
-				CE9293C91FC83EAA000DF5C7 /* ccnf_patches_1.00_inner.txt */,
-			);
-			path = patch_experts;
-			sourceTree = "<group>";
-		};
-		CE9293CA1FC83EAA000DF5C7 /* pdms */ = {
-			isa = PBXGroup;
-			children = (
-				CE9293CB1FC83EAA000DF5C7 /* pdm_51_inner.txt */,
-			);
-			path = pdms;
-			sourceTree = "<group>";
-		};
-		CE9293CC1FC83EAA000DF5C7 /* patch_experts */ = {
-			isa = PBXGroup;
-			children = (
-				CE9293CD1FC83EAA000DF5C7 /* ccnf_patches_0.25_general.txt */,
-				CE9293CE1FC83EAA000DF5C7 /* ccnf_patches_0.25_ibug_glasses.txt */,
-				CE9293CF1FC83EAA000DF5C7 /* ccnf_patches_0.25_wild.txt */,
-				CE9293D01FC83EAA000DF5C7 /* ccnf_patches_0.35_general.txt */,
-				CE9293D11FC83EAA000DF5C7 /* ccnf_patches_0.35_ibug_glasses.txt */,
-				CE9293D21FC83EAA000DF5C7 /* ccnf_patches_0.35_wild.txt */,
-				CE9293D31FC83EAA000DF5C7 /* ccnf_patches_0.5_general.txt */,
-				CE9293D41FC83EAA000DF5C7 /* ccnf_patches_0.5_ibug_glasses.txt */,
-				CE9293D51FC83EAA000DF5C7 /* ccnf_patches_0.5_wild.txt */,
-				CE9293D61FC83EAA000DF5C7 /* ccnf_patches_1_ibug_glasses.txt */,
-				CE9293D71FC83EAA000DF5C7 /* ccnf_patches_1_wild.txt */,
-				CE9293D81FC83EAA000DF5C7 /* svr_patches_0.25_general.txt */,
-				CE9293D91FC83EAA000DF5C7 /* svr_patches_0.25_wild.txt */,
-				CE9293DA1FC83EAA000DF5C7 /* svr_patches_0.35_general.txt */,
-				CE9293DB1FC83EAA000DF5C7 /* svr_patches_0.35_wild.txt */,
-				CE9293DC1FC83EAA000DF5C7 /* svr_patches_0.5_general.txt */,
-				CE9293DD1FC83EAA000DF5C7 /* svr_patches_0.5_wild.txt */,
-			);
-			path = patch_experts;
-			sourceTree = "<group>";
-		};
-		CE9293DE1FC83EAA000DF5C7 /* pdms */ = {
-			isa = PBXGroup;
-			children = (
-				CE9293DF1FC83EAA000DF5C7 /* In-the-wild_aligned_PDM_68.txt */,
-				CE9293E01FC83EAA000DF5C7 /* Multi-PIE_aligned_PDM_68.txt */,
-				CE9293E11FC83EAA000DF5C7 /* pdm_68_aligned_ibug+glasses.txt */,
-			);
-			path = pdms;
 			sourceTree = "<group>";
 		};
 		EB38FEE9182BAE04004A705C = {
@@ -771,89 +541,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				89F485D6182D195300E8FEC0 /* InfoPlist.strings in Resources */,
-				CE9294271FC83F22000DF5C7 /* ccnf_patches_0.5_ibug_glasses.mat in Resources */,
-				CE9294131FC83F0B000DF5C7 /* clnf_ibug_glasses.txt in Resources */,
-				CE92940F1FC83EEF000DF5C7 /* pdm_68_aligned_ibug+glasses.txt in Resources */,
-				CE9294211FC83F1D000DF5C7 /* ccnf_patches_1_ibug_glasses.txt in Resources */,
-				CE92941E1FC83F1D000DF5C7 /* ccnf_patches_0.5_ibug_glasses.mat in Resources */,
-				CE9293F71FC83ED1000DF5C7 /* pdm_28_eye_3D_closed.txt in Resources */,
-				CE9294141FC83F0B000DF5C7 /* main_clnf_ibug_glasses.txt in Resources */,
-				CE9293F01FC83EC8000DF5C7 /* clnf_right_synth.txt in Resources */,
-				CE9293F11FC83EC8000DF5C7 /* main_clnf_synth_left.txt in Resources */,
-				CE92942A1FC83F22000DF5C7 /* ccnf_patches_1_ibug_glasses.txt in Resources */,
-				CE9294201FC83F1D000DF5C7 /* ccnf_patches_1_ibug_glasses.mat in Resources */,
-				CE9293EA1FC83EC3000DF5C7 /* main_clm_general.txt in Resources */,
-				CE92941A1FC83F1D000DF5C7 /* ccnf_patches_0.25_ibug_glasses.mat in Resources */,
-				CE9294071FC83EE9000DF5C7 /* ccnf_patches_1_wild.txt in Resources */,
+				CEAD60421FCD654A00A31FA6 /* clnf_ibug_glasses.txt in Resources */,
+				CEAD60451FCD654A00A31FA6 /* clnf_right_synth.txt in Resources */,
+				CEAD605D1FCD654A00A31FA6 /* tris_68_full.txt in Resources */,
+				CEAD603E1FCD654A00A31FA6 /* ccnf_patches_150_synth_lid_.txt in Resources */,
+				CEAD60441FCD654A00A31FA6 /* clnf_left_synth.txt in Resources */,
+				CEAD60521FCD654A00A31FA6 /* main_clnf_wild.txt in Resources */,
+				CEAD60461FCD654A00A31FA6 /* clnf_wild.txt in Resources */,
+				CEAD604A1FCD654A00A31FA6 /* left_ccnf_patches_150_synth_lid_.txt in Resources */,
+				CEAD60501FCD654A00A31FA6 /* main_clnf_synth_left.txt in Resources */,
 				89F485D5182D195300E8FEC0 /* Main_iPhone.storyboard in Resources */,
 				5396A9F21CA131EA00B19EB5 /* emptyIcon.png in Resources */,
-				CE9294171FC83F10000DF5C7 /* ccnf_patches_0.5_ibug_glasses.txt in Resources */,
 				89F485D8182D195300E8FEC0 /* Images.xcassets in Resources */,
-				CE9294041FC83EE9000DF5C7 /* ccnf_patches_0.5_ibug_glasses.txt in Resources */,
+				CEAD60511FCD654A00A31FA6 /* main_clnf_synth_right.txt in Resources */,
+				CEAD60341FCD654A00A31FA6 /* ccnf_patches_05_ibug_glasses.txt in Resources */,
 				5396A9F61CA131EA00B19EB5 /* portraitUp.png in Resources */,
-				CE9293F81FC83ED1000DF5C7 /* pdm_28_l_eye_3D_closed.txt in Resources */,
-				CE9293FA1FC83ED7000DF5C7 /* main_clnf_inner.txt in Resources */,
-				CE9294161FC83F10000DF5C7 /* ccnf_patches_0.35_ibug_glasses.txt in Resources */,
-				CE9293FB1FC83EDB000DF5C7 /* ccnf_patches_1.00_inner.txt in Resources */,
-				CE9293EE1FC83EC3000DF5C7 /* main_clnf_wild.txt in Resources */,
-				CE92940A1FC83EE9000DF5C7 /* svr_patches_0.35_general.txt in Resources */,
-				CE9293FD1FC83EE9000DF5C7 /* ccnf_patches_0.25_general.txt in Resources */,
-				CE9294181FC83F10000DF5C7 /* ccnf_patches_1_ibug_glasses.txt in Resources */,
-				CE92941C1FC83F1D000DF5C7 /* ccnf_patches_0.35_ibug_glasses.mat in Resources */,
-				CE92940B1FC83EE9000DF5C7 /* svr_patches_0.35_wild.txt in Resources */,
-				CE9294121FC83F06000DF5C7 /* pdm_68_aligned_ibug+glasses.txt in Resources */,
-				CE9294231FC83F22000DF5C7 /* ccnf_patches_0.25_ibug_glasses.mat in Resources */,
-				CE9293E81FC83EB0000DF5C7 /* clnf_wild.txt in Resources */,
-				CE92940E1FC83EEF000DF5C7 /* In-the-wild_aligned_PDM_68.txt in Resources */,
-				CE9293F51FC83ECE000DF5C7 /* left_ccnf_patches_1.00_synth_lid_.txt in Resources */,
-				CE9294221FC83F1D000DF5C7 /* imgs_used_ibug_glasses.mat in Resources */,
+				CEAD60391FCD654A00A31FA6 /* ccnf_patches_035_general.txt in Resources */,
+				CEAD60601FCD654A00A31FA6 /* validator_general_68.txt in Resources */,
+				CEAD605F1FCD654A00A31FA6 /* validator_cnn.txt in Resources */,
+				CEAD60491FCD654A00A31FA6 /* left_ccnf_patches_100_synth_lid_.txt in Resources */,
+				CEAD604D1FCD654A00A31FA6 /* main_clnf_general_back.txt in Resources */,
+				CEAD60321FCD654A00A31FA6 /* ccnf_patches_1_wild.txt in Resources */,
+				CEAD603B1FCD654A00A31FA6 /* ccnf_patches_035_wild.txt in Resources */,
+				CEAD605E1FCD654A00A31FA6 /* tris_68.txt in Resources */,
 				5396A9F41CA131EA00B19EB5 /* landscapeRight.png in Resources */,
-				CE9294151FC83F10000DF5C7 /* ccnf_patches_0.25_ibug_glasses.txt in Resources */,
-				CE9293F91FC83ED7000DF5C7 /* clnf_inner.txt in Resources */,
-				CE92941B1FC83F1D000DF5C7 /* ccnf_patches_0.25_ibug_glasses.txt in Resources */,
-				CE92941F1FC83F1D000DF5C7 /* ccnf_patches_0.5_ibug_glasses.txt in Resources */,
-				CE9293E61FC83EB0000DF5C7 /* clnf_general.txt in Resources */,
-				CE9294081FC83EE9000DF5C7 /* svr_patches_0.25_general.txt in Resources */,
-				CE9293F21FC83EC8000DF5C7 /* main_clnf_synth_right.txt in Resources */,
-				CE92941D1FC83F1D000DF5C7 /* ccnf_patches_0.35_ibug_glasses.txt in Resources */,
-				CE92940D1FC83EE9000DF5C7 /* svr_patches_0.5_wild.txt in Resources */,
-				CE9293FF1FC83EE9000DF5C7 /* ccnf_patches_0.25_wild.txt in Resources */,
+				CEAD60471FCD654A00A31FA6 /* haar_align.txt in Resources */,
 				53CDD1351A2317C400866575 /* logo3d.png in Resources */,
-				CE9294061FC83EE9000DF5C7 /* ccnf_patches_1_ibug_glasses.txt in Resources */,
-				CE9293EB1FC83EC3000DF5C7 /* main_clm_wild.txt in Resources */,
-				CE9293FE1FC83EE9000DF5C7 /* ccnf_patches_0.25_ibug_glasses.txt in Resources */,
-				CE9294021FC83EE9000DF5C7 /* ccnf_patches_0.35_wild.txt in Resources */,
-				CE9293F61FC83ECE000DF5C7 /* left_ccnf_patches_1.50_synth_lid_.txt in Resources */,
-				CE9294051FC83EE9000DF5C7 /* ccnf_patches_0.5_wild.txt in Resources */,
-				CE9294031FC83EE9000DF5C7 /* ccnf_patches_0.5_general.txt in Resources */,
-				CE9294261FC83F22000DF5C7 /* ccnf_patches_0.35_ibug_glasses.txt in Resources */,
-				CE92942B1FC83F22000DF5C7 /* imgs_used_ibug_glasses.mat in Resources */,
-				CE9293F41FC83ECE000DF5C7 /* ccnf_patches_1.50_synth_lid_.txt in Resources */,
-				CE92940C1FC83EE9000DF5C7 /* svr_patches_0.5_general.txt in Resources */,
+				CEAD604F1FCD654A00A31FA6 /* main_clnf_inner.txt in Resources */,
 				5396A9F71CA131EA00B19EB5 /* switchCamera.png in Resources */,
-				CE9293E91FC83EC3000DF5C7 /* haarAlign.txt in Resources */,
+				CEAD60481FCD654A00A31FA6 /* in_the_wild_aligned_pdm_68.txt in Resources */,
+				CEAD60531FCD654A00A31FA6 /* pdm_28_eye_3d_closed.txt in Resources */,
 				89F485DA182D195300E8FEC0 /* MainWireframe-Info.plist in Resources */,
-				CE9294091FC83EE9000DF5C7 /* svr_patches_0.25_wild.txt in Resources */,
-				CE9294281FC83F22000DF5C7 /* ccnf_patches_0.5_ibug_glasses.txt in Resources */,
-				CE9293F31FC83ECE000DF5C7 /* ccnf_patches_1.00_synth_lid_.txt in Resources */,
-				CE9293ED1FC83EC3000DF5C7 /* main_clnf_ibug_glasses_movile.txt in Resources */,
+				CEAD60541FCD654A00A31FA6 /* pdm_28_l_eye_3d_closed.txt in Resources */,
+				CEAD60311FCD654A00A31FA6 /* ccnf_patches_1_ibug_glasses.txt in Resources */,
+				CEAD60361FCD654A00A31FA6 /* ccnf_patches_025_general.txt in Resources */,
+				CEAD60561FCD654A00A31FA6 /* pdm_68_aligned_ibug_glasses.txt in Resources */,
+				CEAD60351FCD654A00A31FA6 /* ccnf_patches_05_wild.txt in Resources */,
 				5396A9F51CA131EA00B19EB5 /* portrait.png in Resources */,
+				CEAD60331FCD654A00A31FA6 /* ccnf_patches_05_general.txt in Resources */,
+				CEAD604E1FCD654A00A31FA6 /* main_clnf_ibug_glasses_movile.txt in Resources */,
 				89F485D4182D195300E8FEC0 /* Main_iPad.storyboard in Resources */,
-				CE9293E41FC83EB0000DF5C7 /* clm_general.txt in Resources */,
-				CE9293EF1FC83EC8000DF5C7 /* clnf_left_synth.txt in Resources */,
-				CE9293EC1FC83EC3000DF5C7 /* main_clnf_general_back.txt in Resources */,
-				CE9294241FC83F22000DF5C7 /* ccnf_patches_0.25_ibug_glasses.txt in Resources */,
-				CE9293E71FC83EB0000DF5C7 /* clnf_ibug_glasses.txt in Resources */,
-				CE9294011FC83EE9000DF5C7 /* ccnf_patches_0.35_ibug_glasses.txt in Resources */,
-				CE9293FC1FC83EDF000DF5C7 /* pdm_51_inner.txt in Resources */,
+				CEAD60381FCD654A00A31FA6 /* ccnf_patches_025_wild.txt in Resources */,
+				CEAD603C1FCD654A00A31FA6 /* ccnf_patches_100_inner.txt in Resources */,
+				CEAD60431FCD654A00A31FA6 /* clnf_inner.txt in Resources */,
+				CEAD60551FCD654A00A31FA6 /* pdm_51_inner.txt in Resources */,
+				CEAD603D1FCD654A00A31FA6 /* ccnf_patches_100_synth_lid_.txt in Resources */,
+				CEAD60411FCD654A00A31FA6 /* clnf_general.txt in Resources */,
 				5396A9F31CA131EA00B19EB5 /* landscapeLeft.png in Resources */,
-				CE9294191FC83F13000DF5C7 /* pdm_68_aligned_ibug+glasses.txt in Resources */,
-				CE9294101FC83EF2000DF5C7 /* tris_68.txt in Resources */,
-				CE9294001FC83EE9000DF5C7 /* ccnf_patches_0.35_general.txt in Resources */,
-				CE9294251FC83F22000DF5C7 /* ccnf_patches_0.35_ibug_glasses.mat in Resources */,
-				CE9293E51FC83EB0000DF5C7 /* clm_wild.txt in Resources */,
-				CE9294111FC83EFE000DF5C7 /* validator_cnn.txt in Resources */,
-				CE9294291FC83F22000DF5C7 /* ccnf_patches_1_ibug_glasses.mat in Resources */,
+				CEAD603A1FCD654A00A31FA6 /* ccnf_patches_035_ibug_glasses.txt in Resources */,
+				CEAD60371FCD654A00A31FA6 /* ccnf_patches_025_ibug_glasses.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -79,8 +79,6 @@ public class LoadConfigurationsTask extends android.os.AsyncTask<Void,Void,Boole
         boolean result = false;
         if (m_context != null && m_conf_callback != null) {
             String private_path = m_context.getFilesDir().toString();
-            m_filenetDefinition = private_path + "/" + m_filenetDefinition;
-            m_weightsDefinition = private_path + "/" + m_weightsDefinition;
 
             if (isCallbackDefined
                     && areDNNModelsDefined
@@ -94,11 +92,8 @@ public class LoadConfigurationsTask extends android.os.AsyncTask<Void,Void,Boole
                         "native-lib"
                 };
                 JniManager.loadLibraries(libraryList_withPrefix);
-                JniManager.init(m_filenetDefinition,
-                        m_weightsDefinition,
-                        mInputWidth,
-                        mInputHeight,
-                        mNeuralType.ordinal());
+                JniManager.init(private_path, mInputWidth, mInputHeight,
+                                mNeuralType.ordinal());
             } else {
                 Log.e(LOG_TAG, "please define the requierements," +
                         " callback, resources, dnn models, input Sizes");

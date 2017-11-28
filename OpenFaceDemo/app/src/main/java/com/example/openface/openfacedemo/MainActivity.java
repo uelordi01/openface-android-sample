@@ -1,5 +1,6 @@
 package com.example.openface.openfacedemo;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,8 +14,10 @@ import org.opencv.core.Mat;
 import org.utils.JniManager;
 import org.utils.KTUtils;
 import org.utils.LoadConfigurationsTask;
+import org.utils.WritePrivateStorage;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity implements
@@ -35,31 +38,25 @@ public class MainActivity extends AppCompatActivity implements
         initResources();
         mOpenCvCameraView = (CameraBridgeViewBase) findViewById(R.id.fd_activity_surface_view);
         mOpenCvCameraView.setVisibility(CameraBridgeViewBase.VISIBLE);
-        mOpenCvCameraView.setMaxFrameSize(640, 480);
+        mOpenCvCameraView.setMaxFrameSize(320, 240);
         mOpenCvCameraView.setCvCameraViewListener(this);
     }
     private void initResources() {
 
         // Define your caffe models:
         final String CAFFE_MODEL[] = {
-                "svr_patches_0.5_wild.txt",
                 "main_clnf_inner.txt",
-                "clm_wild.txt",
                 "ccnf_patches_1_ibug_glasses.txt",
                 "main_clnf_general_back.txt",
-                "main_clm_general.txt",
                 "validator_cnn.txt",
                 "tris_68_full.txt",
                 "ccnf_patches_1_wild.txt",
                 "clnf_right_synth.txt",
                 "ccnf_patches_100_inner.txt",
                 "left_ccnf_patches_1.50_synth_lid_.txt",
-                "svr_patches_0.25_general.txt",
                 "main_clnf_ibug_glasses_movile.txt",
                 "main_clnf_synth_left.txt",
-                "svr_patches_0.35_general.txt",
                 "ccnf_patches_1.50_synth_lid_.txt",
-                "svr_patches_0.35_wild.txt",
                 "in_the_wild_aligned_pdm_68.txt",
                 "ccnf_patches_05_wild.txt",
                 "ccnf_patches_0.25_ibug_glasses.txt",
@@ -69,15 +66,12 @@ public class MainActivity extends AppCompatActivity implements
                 "clnf_left_synth.txt",
                 "ccnf_patches_0.5_general.txt",
                 "haar_align.txtt",
-                "svr_patches_0.25_wild.txt",
                 "ccnf_patches_0.25_general.txt",
                 "clnf_wild.txt",
                 "clnf_general.txt",
                 "pdm_68_aligned_ibug_glasses.txt",
-                "main_clm_wild.txt",
                 "ccnf_patches_0.35_ibug_glasses.txt",
                 "ccnf_patches_0.25_wild.txt",
-                "svr_patches_0.5_general.txt",
                 "pdm_51_inner.txt",
                 "clnf_ibug_glasses.txt",
                 "ccnf_patches_1.00_synth_lid_.txt",
@@ -85,7 +79,6 @@ public class MainActivity extends AppCompatActivity implements
                 "tris_68.txt",
                 "validator_general_68.txt",
                 "pdm_28_eye_3d_closed.txt",
-                "clm_general.txt",
                 "ccnf_patches_0.35_wild.txt",
                 "ccnf_patches_0.5_ibug_glasses.txt",
                 "main_clnf_synth_right.txt",
@@ -94,24 +87,18 @@ public class MainActivity extends AppCompatActivity implements
 
         //Define the external resources that are going to write in the internal memory.
         Map<Integer, String> resources = new HashMap<Integer,String>();
-        resources.put(R.raw.svr_patches_05_wild, "svr_patches_0.5_wild.txt");
         resources.put(R.raw.main_clnf_inner, "main_clnf_inner.txt");
-        resources.put(R.raw.clm_wild, "clm_wild.txt");
         resources.put(R.raw.ccnf_patches_1_ibug_glasses, "ccnf_patches_1_ibug_glasses.txt");
         resources.put(R.raw.main_clnf_general_back, "main_clnf_general_back.txt");
-        resources.put(R.raw.main_clm_general, "main_clm_general.txt");
         resources.put(R.raw.validator_cnn, "validator_cnn.txt");
         resources.put(R.raw.tris_68_full, "tris_68_full.txt");
         resources.put(R.raw.ccnf_patches_1_wild, "ccnf_patches_1_wild.txt");
         resources.put(R.raw.clnf_right_synth, "clnf_right_synth.txt");
         resources.put(R.raw.ccnf_patches_100_inner, "ccnf_patches_100_inner.txt");
         resources.put(R.raw.left_ccnf_patches_150_synth_lid_, "left_ccnf_patches_1.50_synth_lid_.txt");
-        resources.put(R.raw.svr_patches_025_general, "svr_patches_0.25_general.txt");
         resources.put(R.raw.main_clnf_ibug_glasses_movile, "main_clnf_ibug_glasses_movile.txt");
         resources.put(R.raw.main_clnf_synth_left, "main_clnf_synth_left.txt");
-        resources.put(R.raw.svr_patches_035_general, "svr_patches_0.35_general.txt");
         resources.put(R.raw.ccnf_patches_150_synth_lid_, "ccnf_patches_1.50_synth_lid_.txt");
-        resources.put(R.raw.svr_patches_035_wild, "svr_patches_0.35_wild.txt");
         resources.put(R.raw.in_the_wild_aligned_pdm_68, "in_the_wild_aligned_pdm_68.txt");
         resources.put(R.raw.ccnf_patches_05_wild, "ccnf_patches_05_wild.txt");
         resources.put(R.raw.ccnf_patches_025_ibug_glasses, "ccnf_patches_0.25_ibug_glasses.txt");
@@ -121,15 +108,12 @@ public class MainActivity extends AppCompatActivity implements
         resources.put(R.raw.clnf_left_synth, "clnf_left_synth.txt");
         resources.put(R.raw.ccnf_patches_05_general, "ccnf_patches_0.5_general.txt");
         resources.put(R.raw.haar_align, "haar_alignn.txt");
-        resources.put(R.raw.svr_patches_025_wild, "svr_patches_0.25_wild.txt");
         resources.put(R.raw.ccnf_patches_025_general, "ccnf_patches_0.25_general.txt");
         resources.put(R.raw.clnf_wild, "clnf_wild.txt");
         resources.put(R.raw.clnf_general, "clnf_general.txt");
         resources.put(R.raw.pdm_68_aligned_ibug_glasses, "pdm_68_aligned_ibug_glasses.txt");
-        resources.put(R.raw.main_clm_wild, "main_clm_wild.txt");
         resources.put(R.raw.ccnf_patches_035_ibug_glasses, "ccnf_patches_0.35_ibug_glasses.txt");
         resources.put(R.raw.ccnf_patches_025_wild, "ccnf_patches_0.25_wild.txt");
-        resources.put(R.raw.svr_patches_05_general, "svr_patches_0.5_general.txt");
         resources.put(R.raw.pdm_51_inner, "pdm_51_inner.txt");
         resources.put(R.raw.clnf_ibug_glasses, "clnf_ibug_glasses.txt");
         resources.put(R.raw.ccnf_patches_100_synth_lid_, "ccnf_patches_1.00_synth_lid_.txt");
@@ -137,11 +121,18 @@ public class MainActivity extends AppCompatActivity implements
         resources.put(R.raw.tris_68, "tris_68.txt");
         resources.put(R.raw.validator_general_68, "validator_general_68.txt");
         resources.put(R.raw.pdm_28_eye_3d_closed, "pdm_28_eye_3d_closed.txt");
-        resources.put(R.raw.clm_general, "clm_general.txt");
         resources.put(R.raw.ccnf_patches_035_wild, "ccnf_patches_0.35_wild.txt");
         resources.put(R.raw.ccnf_patches_05_ibug_glasses, "ccnf_patches_0.5_ibug_glasses.txt");
         resources.put(R.raw.main_clnf_synth_right, "main_clnf_synth_right.txt");
         resources.put(R.raw.pdm_28_l_eye_3d_closed, "pdm_28_l_eye_3d_closed.txt");
+
+        Iterator it = resources.entrySet().iterator();
+        WritePrivateStorage privateFileHandler = new WritePrivateStorage();
+        Context context = getApplicationContext();
+        while(it.hasNext()) {
+            Map.Entry pair = (Map.Entry)it.next();
+            privateFileHandler.writeFileToPrivateStorage(context, (Integer)pair.getKey(),(String)pair.getValue());
+        }
 
 //        configuration_resources.put(R.raw.res10_300x300_ssd_iter_140000_net, CAFFE_MODEL[0]);
 //        configuration_resources.put(R.raw.res10_300x300_ssd_iter_140000_weights, CAFFE_MODEL[1]);

@@ -1,5 +1,5 @@
-PDM In-the-wild_aligned_PDM_68.txt
+PDM in_the_wild_aligned_pdm_68.txt
 Triangulations tris_68.txt
-PatchesCCNF ccnf_patches_0.25_general.txt
-PatchesCCNF ccnf_patches_0.35_general.txt
-PatchesCCNF ccnf_patches_0.5_general.txt
+PatchesCCNF ccnf_patches_025_general.txt
+PatchesCCNF ccnf_patches_035_general.txt
+PatchesCCNF ccnf_patches_05_general.txt
