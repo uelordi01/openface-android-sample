@@ -1,2 +1,2 @@
 # openface-android-sample
-Opencv Android Sample.
+Opencv Android and iOS samples.
